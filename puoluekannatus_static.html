@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TEST</title>
+<style>
+text {font-size:1.1em;}
+</style>
+</head>
+<body>
+<script src="d3-master/d3.min.js"></script>
+<script>
+
+d3.csv("puoluekannatus.csv", function (data) {
+
+var svg = d3.select("body").append("svg")
+	.attr("width", 600)
+	.attr("height", 400);
+
+var color = d3.scale.category10();
+
+svg.selectAll("rect")
+		.data(data)
+		.enter()
+			.append("rect")
+			.attr("x", 0)
+			.attr("y", function (d, i){ return i * 50; })
+			.attr("width", function (d){ return d.kannatus * 20; })
+			.attr("height", 30)
+			.style("fill", function (d, i){ return color(i); });
+
+svg.selectAll("text")
+		.data(data)
+		.enter()
+			.append("text")
+			.attr("fill", "white")
+			.attr("x", 2)
+			.attr("y", function (d, i) { return i * 50 + 22; })
+			.text(function (d) { return d.puolue + " " + d.kannatus; });
+})
+
+</script>
+</body>
+</html>

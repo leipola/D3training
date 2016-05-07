@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>D3 Example</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+<button class="sini">sini</button>
+<button class="puna">puna</button>
+    <script>
+
+      var scale = d3.scale.linear()
+        .domain([1, 5])   // Data space
+        .range([0, 200]); // Pixel space
+
+      var svg = d3.select("body").append("svg")
+        .attr("width",  250)
+        .attr("height", 250);
+
+      function render(data, color){
+
+        // Bind data
+        var rects = svg.selectAll("rect").data(data);
+        
+        // Enter
+        rects.enter().append("rect");
+
+        // Update
+        rects
+        	.transition().duration(1000)
+          .attr("x", scale)
+          .attr("y", 50)
+          .attr("width",  20)
+          .attr("height", 20)
+          .attr("fill", color);
+      }
+
+	d3.select(".puna")
+		.on("click", function(){
+			render([1, 2, 2.5], "red");
+		});
+
+	d3.select(".sini")
+		.on("click", function(){
+			render([1, 2, 3, 4, 5], "blue");
+		});
+
+    </script>
+  </body>
+</html>

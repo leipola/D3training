@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TEST</title>
+<style>
+text {font-size:1.1em;}
+</style>
+</head>
+<body>
+<h1>Puoluekannatukset</h1>
+<button class="vanha">2/2015</button>
+<button class="uusi">4/2016</button>
+<hr />
+<script src="d3-master/d3.min.js"></script>
+<script>
+
+var svg = d3.select("body").append("svg")
+	.attr("width", 600)
+	.attr("height", 400);
+
+function vanhat () {
+	d3.csv("puoluekannatus.csv", function (data) {
+		return data;
+	})
+}
+
+function uudet () {
+	d3.csv("uusikannatus.csv", function (data) {
+		return data;
+	})
+}
+
+function vaihda(data) {
+	
+var color = d3.scale.category10();
+
+var palkit = svg.selectAll("rect").data(data);
+
+palkit.enter().append("rect");
+
+palkit
+			.attr("x", 0)
+			.attr("y", function (d, i){ return i * 50; })
+			.attr("width", function (d){ return d.kannatus * 20; })
+			.attr("height", 30)
+			.style("fill", function (d, i){ return color(i); });
+
+var tekstit = svg.selectAll("text").data(data);
+
+tekstit.enter().append("text");
+
+tekstit
+			.attr("fill", "white")
+			.attr("x", 2)
+			.attr("y", function (d, i) { return i * 50 + 22; })
+			.text(function (d) { return d.puolue + " " + d.kannatus; });
+}
+
+vaihda(vanhat());
+
+d3.select(".vanha")
+	.on("click", function() {
+		vaihda(vanhat());
+	});
+
+d3.select(".uusi")
+	.on("click", function() {
+		vaihda(uudet());
+	});
+
+</script>
+</body>
+</html>
