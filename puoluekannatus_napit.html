@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>TEST</title>
 <style>
-text {font-size:1.1em;}
+text {font-size:0.9em;}
 </style>
 </head>
 <body>
@@ -19,27 +19,22 @@ var svg = d3.select("body").append("svg")
 	.attr("width", 600)
 	.attr("height", 400);
 
-function vanhat () {
-	d3.csv("puoluekannatus.csv", function (data) {
-		return data;
-	})
-}
-
-function uudet () {
-	d3.csv("uusikannatus.csv", function (data) {
-		return data;
-	})
-}
-
 function vaihda(data) {
 	
 var color = d3.scale.category10();
 
 var palkit = svg.selectAll("rect").data(data);
 
-palkit.enter().append("rect");
+palkit.enter()
+			.append("rect")
+			.attr("x", 0)
+			.attr("y", function (d, i){ return i * 50; })
+			.attr("width", 0)
+			.attr("height", 30)
+			.style("fill", function (d, i){ return color(i); })
 
 palkit
+			.transition().duration(1000)
 			.attr("x", 0)
 			.attr("y", function (d, i){ return i * 50; })
 			.attr("width", function (d){ return d.kannatus * 20; })
@@ -53,20 +48,29 @@ tekstit.enter().append("text");
 tekstit
 			.attr("fill", "white")
 			.attr("x", 2)
-			.attr("y", function (d, i) { return i * 50 + 22; })
+			.attr("y", function (d, i) { return i * 50 + 20; })
 			.text(function (d) { return d.puolue + " " + d.kannatus; });
 }
 
-vaihda(vanhat());
+d3.csv("puoluekannatus.csv", function(data) {
+	var tiedot = data;
+	vaihda(tiedot);
+});
 
 d3.select(".vanha")
-	.on("click", function() {
-		vaihda(vanhat());
+	.on("click", function(){
+		d3.csv("puoluekannatus.csv", function(data) {
+			var tiedot = data;
+			 vaihda(tiedot);
+		});
 	});
 
 d3.select(".uusi")
-	.on("click", function() {
-		vaihda(uudet());
+	.on("click", function(){
+		d3.csv("uusikannatus.csv", function(data) {
+			var tiedot = data;
+			vaihda(tiedot);
+		});
 	});
 
 </script>
