@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TEST</title>
+<style>
+text {font-size:0.9em;}
+</style>
+</head>
+<body>
+<h1>Puoluekannatukset</h1>
+<button class="vanha">2/2015</button>
+<button class="uusi">4/2016</button>
+<hr />
+<script src="d3-master/d3.min.js"></script>
+<script>
+
+var svg = d3.select("body").append("svg")
+	.attr("width", 600)
+	.attr("height", 400);
+
+function render(data) {
+	console.log("start");
+	console.log(data);
+	
+	var color = d3.scale.category10();
+
+	var palkit = svg.selectAll("rect").data(data);
+
+	palkit.enter()
+		.append("rect")
+		.attr("x", 0)
+		.attr("y", function (d, i){ return i * 50; })
+		.attr("width", 0)
+		.attr("height", 30)
+		.style("fill", function (d, i){ return color(i); })
+
+	palkit
+		.transition().duration(1000)
+		.attr("x", 0)
+		.attr("y", function (d, i){ return i * 50; })
+		.attr("width", function (d){ return d.value * 20; })
+		.attr("height", 30)
+		.style("fill", function (d, i){ return color(i); });
+}
+
+d3.csv("puoluedata.csv", function (dataa){
+	dataa.forEach(parsija);
+	render(dataa[0]);
+});
+
+function parsija(d){
+	d.SDP = +d.SDP;
+    d.VAS = +d.VAS;
+	d.KOK = +d.KOK;
+    d.KES = +d.KES;
+	d.RKP = +d.RKP;
+    d.KRD = +d.KRD;
+	d.VIH = +d.VIH;
+    d.PER = +d.PER;
+	d.MUU = +d.MUU;
+    return d;
+}
+
+</script>
+</body>
+</html>
