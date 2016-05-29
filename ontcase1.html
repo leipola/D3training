@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TEST</title>
+<style>
+text {font-size:0.9em;}
+</style>
+</head>
+<body>
+<h1>Puoluekannatukset</h1>
+<button class="vanha">Vaalit 4/2015</button>
+<button class="uusi">Gallup 5/2016</button>
+<hr />
+<script src="d3-master/d3.min.js"></script>
+<script>
+
+var svg = d3.select("body").append("svg")
+	.attr("viewBox", "0 0 500 400")
+	.attr("preserveAspectRatio", "xMidYMid meet");
+
+function vaihda(data, aika) {
+	
+	var color = d3.scale.category10();
+	var palkit = svg.selectAll("rect").data(data);
+
+	palkit.enter()
+			.append("rect")
+			.attr("x", 0)
+			.attr("y", function (d, i){ return i * 50; })
+			.attr("width", 0)
+			.attr("height", 30)
+			.style("fill", function (d, i){ return color(i); })
+
+	palkit
+			.transition().duration(1000)
+			.attr("x", 0)
+			.attr("y", function (d, i){ return i * 50; })
+			.attr("width", function(d){
+				var dAika = eval("d." + aika);
+				return dAika * 20;
+				})
+			.attr("height", 30)
+			.style("fill", function (d, i){ return color(i); });
+
+	var tekstit = svg.selectAll("text").data(data);
+
+	tekstit.enter().append("text");
+
+	tekstit
+			.attr("fill", "white")
+			.attr("x", 2)
+			.attr("y", function (d, i) { return i * 50 + 20; })
+			.text(function (d) {
+				var dAika = eval("d." + aika);
+				return d.puolue + " " + dAika;
+			});
+}
+
+d3.csv("ontcase1_data.csv", function(data) {
+	var tiedot = data;
+	var aika = "uusi";
+	vaihda(tiedot, aika);
+});
+
+d3.select(".vanha")
+	.on("click", function(){
+		d3.csv("ontcase1_data.csv", function(data) {
+			var tiedot = data;
+			var aika = "vanha";
+			vaihda(tiedot, aika);
+		});
+	});
+
+d3.select(".uusi")
+	.on("click", function(){
+		d3.csv("ontcase1_data.csv", function(data) {
+			var tiedot = data;
+			var aika = "uusi";
+			vaihda(tiedot, aika);
+		});
+	});
+
+</script>
+</body>
+</html>
