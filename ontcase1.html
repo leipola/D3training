@@ -53,7 +53,9 @@ function vaihda(data, aika) {
 			.attr("y", function (d, i) { return i * 50 + 20; })
 			.text(function (d) {
 				var dAika = eval("d." + aika);
-				return d.puolue + " " + dAika;
+				var etiketti = d.puolue + " " + dAika;
+				var etiketti = etiketti.replace(/\./g, ',');
+				return etiketti;
 			});
 }
 
