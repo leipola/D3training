@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ONT2</title>
+    <script src="d3-master/d3.js"></script>
+	<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.lineHki {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.lineGlo {
+  fill: none;
+  stroke: red;
+  stroke-width: 1.5px;
+}
+
+.lineZer {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}
+
+	</style>
+  </head>
+  <body>
+<script>
+
+var margin = {top: 10, right: 60, bottom: 10, left: 10},
+    width = 500 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
+
+var x = d3.time.scale()
+.range([0, width]);
+	
+var y = d3.scale.linear()
+.range([height, 0]);
+
+/*var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");*/
+
+var line1 = d3.svg.line()
+.x(function(d) { return x(d.year); })
+.y(function(d) { return y(d.hki); });
+
+var line2 = d3.svg.line()
+.x(function(d) { return x(d.year); })
+.y(function(d) { return y(d.glo); });
+
+var line3 = d3.svg.line()
+.x(function(d) { return x(d.year); })
+.y(function(d) { return y(0); });
+
+var svg = d3.select("body").append("svg")
+	.attr("viewBox", "0 0 500 300")
+	.attr("preserveAspectRatio", "xMidYMid meet")
+	.attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	
+d3.csv("ontcase2_data.csv", type, function(error, data) {
+	
+	if (error) throw error;
+	
+	x.domain(d3.extent(data, function(d) { return d.year; }));
+	
+	y.domain(d3.extent(data, function(d) { return d.hki; }));
+	
+	//y.domain(d3.extent(data, function(d) { return d.glo; }));
+	
+	/*svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+	svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)*/
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "lineHki")
+      .attr("d", line1);
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "lineGlo")
+      .attr("d", line2);
+
+  svg.append("path")
+      .datum(data)
+      .style("stroke-dasharray", ("3, 3"))
+      .attr("class", "lineZer")
+      .attr("d", line3);
+      
+  svg.append("text")
+		.attr("x", width+5)
+		.attr("y", height*(1-((data[115]["hki"]-d3.extent(data, function(d) { return d.hki; })[0])/(d3.extent(data, function(d) { return d.hki; })[1]-d3.extent(data, function(d) { return d.hki; })[0])))+4)
+		.text("Helsinki");
+
+  svg.append("text")
+		.attr("x", width+5)
+		.attr("y", height*(1-((data[115]["glo"]-d3.extent(data, function(d) { return d.hki; })[0])/(d3.extent(data, function(d) { return d.hki; })[1]-d3.extent(data, function(d) { return d.hki; })[0])))+4)
+		.text("Maailma");
+
+  svg.append("text")
+		.attr("x", width+5)
+		.attr("y", height/2+8)
+		.text("keskiarvo");
+	
+  var focus = svg.append("g")
+      .attr("class", "focus")
+      .style("display", "none");
+
+  focus.append("circle")
+      .attr("r", 4.5);
+
+  focus.append("text")
+      .attr("x", 9)
+      .attr("dy", ".35em");
+
+  svg.append("rect")
+      .attr("class", "overlay")
+      .attr("width", width)
+      .attr("height", height)
+      .on("mouseover", function() { focus.style("display", null); })
+      .on("mouseout", function() { focus.style("display", "none"); })
+      .on("mousemove", mousemove);
+
+});
+
+function type(d) {
+  d.year = +d.year;
+  d.hki = +d.hki;
+  d.glo = +d.glo;
+  return d;
+}
+
+function mousemove() {
+    var x0 = x.invert(d3.mouse(this)[0]),
+    focus.attr("transform", "translate(" + x(d.year) + "," + y(d.hki) + ")");
+    focus.select("text").text(formatCurrency(d.hki));
+}
+
+</script>
+  </body>
+</html>

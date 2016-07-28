@@ -1,0 +1,25 @@
+Kuntavaalidatan interaktiivinen esittäminen
+===========================================
+
+-kuntoon 2012 datalla (kunnat nykytilanteen mukaan?)
+-valmiina uudelle datalle, kun 2017 tulokset tulevat
+-julkaisu vaalipäivän jälkeisenä aamuna
+
+Data:
+-kuntien koordinaatit // Yle/Google Docs
+-valtuutetut (vihr/kaik), äänet (vihr/kaik) // Tilastokeskus§
+-suosituimmat vihreät (äänet/osuus) // Tilastokeskus
+
+Presentaatio:
+-diaesitys, jossa voi mennä eteen tai taakse (autoplay?)
+-onmouseover-tietoa (kuntien nimet...)
+-animoidut ja tyylikkäät transitiot
+
+1) vaalin tulos puolueittain (piiras/pylväs) - OMO:äänimäärä/paikat
+(vain vihreä lohko tai pylväs jatkaa)
+2) vihreät nyt ja ennen (kannatus/paikat) - OMO:äänimäärä/paikat
+(tuore vihreä pylväs hajoaa palloiksi)
+3) vihreä suomi, jossa kunnan paikat pallona - OMO:kunnan nimi, osuus, paikat
+(suosituimpien vihreiden pallot jatkavat, muut katoavat)
+4) naamat ja äänimäärät/suosio esiin - OMO:henkilötiedot
+(palaa alkuun?)

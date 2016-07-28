@@ -1,0 +1,12 @@
+Ilmaston lämpeneminen 1900-luvulla
+==================================
+
+-julkaisu marraskuussa ilmastoneuvotteluiden alla
+
+Data:
+-Helsingin vuosilämpö // FMI
+-globaali keskilämpö // NOAA
+
+Presentaatio:
+-viivadiagrammi, jossa valittavissa vuosittainen ja 10v-liukuma
+-onmouseover-tietoa (tarkat lukuarvot)

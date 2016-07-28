@@ -1,0 +1,22 @@
+Dokumentti:
+( ) lisää kuvia, visuaalisuutta
+( ) kauniimmat versiot Tulepin taulukoista
+( ) Uskalin ja Kuuttin kirja vielä kertaalleen läpi
+( ) kunnollista lähdeaineistoa datavisualisoinneista
+( ) Wikipedian korvaaminen D3-historiikissa, SVG:ssä ja Anscombessa
+( ) Case 1:een viivagraafin soveltumattomuus (lähde!)
+( ) Suhde jQueryyn?
+( ) sisällysluettelon fiksaaminen
+
+Case 2:
+(x) vaakaviiva nollaan
+(x) labelit kaikille
+( ) onmouseovertiedot
+( ) transitio1: nollaviivasta trendiviivaan
+( ) transitio2: trendiviivasta viivaan ja takaisin
+( ) responsiivisuus
+
+Case 3:
+( ) data
+( ) näkymät
+( ) transitiot
