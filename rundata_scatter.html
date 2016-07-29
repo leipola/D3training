@@ -2,28 +2,121 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>D3 Example</title>
-    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <title>Rundata</title>
+    <script src="d3v4/d3.min.js"></script>
   </head>
   <body>
     <script>
 
-	var alue = d3.select("body").append("svg")
-		.attr("width", 300)
-		.attr("height", 300);
+var margin = {top: 50, right: 50, bottom: 50, left: 50},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
-	alue.selectAll("circle")
-			.data([1])
-		.enter().append("circle")
-			.attr("cx", 150)
-			.attr("cy", 150)
-			.attr("r", 10)
-			.on("mouseover", function() {
-				d3.select(this)
-					.transition().duration(200)
-					.attr("cx", Math.floor((Math.random() * 280) + 11))
-					.attr("cy", Math.floor((Math.random() * 280) + 11));
-			})
+var x = d3.scaleLinear()
+    .range([0, width]);
+
+var y = d3.scaleLinear()
+    .range([height, 0]);
+    
+var xAxis = d3.axisBottom(x);
+
+var yAxis = d3.axisLeft(y);
+
+var svg = d3.select("body").append("svg")
+	.attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.tsv("rundata.tsv", function(error, data) {
+  if (error) throw error;
+
+  data.forEach(function(d) {
+    d.date = +d.date;
+    d.length = +d.length;
+    d.time = +d.time;
+    d.hrate = +d.hrate;
+    d.speed = +d.speed;
+  });
+  
+  x.domain(d3.extent(data, function(d) { return d.speed; })).nice();
+  y.domain(d3.extent(data, function(d) { return d.hrate; })).nice();
+  //z.domain(d3.extent(data, function(d) { return d.length; })).nice();
+  
+   svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+    .append("text")
+      .attr("class", "label")
+      .attr("x", width)
+      .attr("y", -6)
+      .style("text-anchor", "end")
+      .text("Nopeus (s/km)");
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("class", "label")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Syke");
+
+  svg.selectAll(".dot")
+      .data(data)
+    .enter().append("circle")
+	  //.attr("r", 10000)
+      //.attr("cx", 0)
+      //.attr("cy", 0)
+      //.style("fill", "white")
+	  //.transition().duration(2000)
+	  .style("z-index", 5)
+      .attr("class", "dot")
+      .attr("r", function(d) { return 6*Math.sqrt(d.length/Math.PI); })
+      .attr("cx", function(d) { return x(d.speed); })
+      .attr("cy", function(d) { return y(d.hrate); })
+      .style("fill", function(d, i) {
+		  if (i+1 == d3.selectAll(data).size()) {
+			  return "red";
+		  } else {
+			  return "black";
+		  };
+	  })
+      .style("opacity", function(d, i) { return (i+10)/(d3.selectAll(data).size()+10); })
+      .on("mouseover", function(d) {
+		  var xt = x(d.speed);
+		  var yt = y(d.hrate);
+		  focus.style("display", null);
+		  d3.select(this).transition().duration(500).attr("r", 60)
+			.style("opacity", 1);
+		  focus.select("text").text(d.date)
+			.attr("x", xt-40)
+			.attr("y", yt)
+			.style("opacity", 1)
+			.transition().duration(800)
+			.attr("x", xt-40)
+			.attr("y", yt)
+			.style("opacity", 1);
+	  })
+      .on("mouseout", function(d, i) {
+		  focus.style("display", "none");
+		  d3.select(this).transition().duration(200).attr("r", 6*Math.sqrt(d.length/Math.PI));
+		  d3.select(this).style("opacity", (i+10)/(d3.selectAll(data).size()+10));
+	  });
+	  
+  var focus = svg.append("g")
+      .attr("class", "focus")
+      .style("display", "none");
+
+  focus.append("text")
+      .attr("x", 50)
+      .attr("y", 50)
+      .style("fill", "blue")
+      .style("z-index", 10);
+});
 
     </script>
   </body>
