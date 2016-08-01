@@ -4,13 +4,25 @@
     <meta charset="utf-8">
     <title>Rundata</title>
     <script src="d3v4/d3.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+    <style>
+	body {
+		background-color:black;
+	}
+	
+	.infoTxt {
+		pointer-events: none;
+		font-family: 'Droid Sans Mono', sans-serif;
+		font-size: 0.7em;
+	}
+    </style>
   </head>
   <body>
     <script>
 
-var margin = {top: 50, right: 50, bottom: 50, left: 50},
+var margin = {top: 60, right: 60, bottom: 60, left: 60},
     width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 640 - margin.top - margin.bottom;
 
 var x = d3.scaleLinear()
     .range([0, width]);
@@ -18,9 +30,9 @@ var x = d3.scaleLinear()
 var y = d3.scaleLinear()
     .range([height, 0]);
     
-var xAxis = d3.axisBottom(x);
+/*var xAxis = d3.axisBottom(x);
 
-var yAxis = d3.axisLeft(y);
+var yAxis = d3.axisLeft(y);*/
 
 var svg = d3.select("body").append("svg")
 	.attr("width", width + margin.left + margin.right)
@@ -41,9 +53,8 @@ d3.tsv("rundata.tsv", function(error, data) {
   
   x.domain(d3.extent(data, function(d) { return d.speed; })).nice();
   y.domain(d3.extent(data, function(d) { return d.hrate; })).nice();
-  //z.domain(d3.extent(data, function(d) { return d.length; })).nice();
   
-   svg.append("g")
+   /*svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis)
@@ -63,59 +74,150 @@ d3.tsv("rundata.tsv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Syke");
+      .text("Syke");*/
 
   svg.selectAll(".dot")
       .data(data)
     .enter().append("circle")
-	  //.attr("r", 10000)
-      //.attr("cx", 0)
-      //.attr("cy", 0)
-      //.style("fill", "white")
-	  //.transition().duration(2000)
-	  .style("z-index", 5)
       .attr("class", "dot")
-      .attr("r", function(d) { return 6*Math.sqrt(d.length/Math.PI); })
       .attr("cx", function(d) { return x(d.speed); })
       .attr("cy", function(d) { return y(d.hrate); })
-      .style("fill", function(d, i) {
+	  .style("fill", function(d, i) {
 		  if (i+1 == d3.selectAll(data).size()) {
-			  return "red";
+			  return "white";
 		  } else {
-			  return "black";
+			  return "white";
 		  };
 	  })
-      .style("opacity", function(d, i) { return (i+10)/(d3.selectAll(data).size()+10); })
+      .style("opacity", function(d, i) { return (i+2)/d3.selectAll(data).size(); })
+	  .transition().duration(800).attr("r", function(d) { return 6*Math.sqrt(d.length/Math.PI); });
+	  
+  svg.selectAll(".dot")
       .on("mouseover", function(d) {
 		  var xt = x(d.speed);
 		  var yt = y(d.hrate);
-		  focus.style("display", null);
-		  d3.select(this).transition().duration(500).attr("r", 60)
+		  txtDate.text(null)
+			.attr("x", xt-40)
+			.attr("y", yt-20)
+			.style("opacity", 0)
+			.style("display", null);
+		  txtHrat.text(null)
+			.attr("x", xt-40)
+			.attr("y", yt-10)
+			.style("opacity", 0)
+			.style("display", null);
+		  txtLeng.text(null)
+			.attr("x", xt-40)
+			.attr("y", yt)
+			.style("opacity", 0)
+			.style("display", null);
+		  txtSpee.text(null)
+			.attr("x", xt-40)
+			.attr("y", yt+10)
+			.style("opacity", 0)
+			.style("display", null);
+		  txtTime.text(null)
+			.attr("x", xt-40)
+			.attr("y", yt+20)
+			.style("opacity", 0)
+			.style("display", null);
+		  d3.select(this).transition().duration(400).attr("r", 60)
 			.style("opacity", 1);
-		  focus.select("text").text(d.date)
-			.attr("x", xt-40)
-			.attr("y", yt)
-			.style("opacity", 1)
-			.transition().duration(800)
-			.attr("x", xt-40)
-			.attr("y", yt)
+		var paiva = "a"+d.date;
+		paiva = paiva.substring(7)+"."+paiva.substring(5, 7)+"."+paiva.substring(1, 5);
+		var tunnit = Math.floor(d.time/3600);
+		var minuutit = Math.floor(d.time/60)-60*tunnit;
+		var sekunnit = d.time-60*minuutit-3600*tunnit;
+		var aika = tunnit+"."+minuutit+"."+sekunnit;
+		var nopeus = Math.floor(d.speed/60)+":"+(d.speed-60*(Math.floor(d.speed/60)));
+		nopeus = nopeus.substring(0, 4);
+		
+
+		
+		  txtDate.text(paiva)
+			.transition().duration(500)
+			.style("opacity", 1);
+		  txtHrat.text("Syke: "+d.hrate)
+			.transition().duration(500)
+			.style("opacity", 1);
+		txtSpee.text("Vauhti: "+nopeus+" min/km")
+			.transition().duration(500)
+			.style("opacity", 1);
+		txtLeng.text("Aika: "+aika)
+			.transition().duration(500)
+			.style("opacity", 1);
+		txtTime.text("Matka: "+d.length+" km")
+			.transition().duration(500)
 			.style("opacity", 1);
 	  })
       .on("mouseout", function(d, i) {
-		  focus.style("display", "none");
+		  txtDate
+			.style("display", "none")
+			.text(null);
+		txtTime
+			.style("display", "none")
+			.text(null);
+		txtHrat
+			.style("display", "none")
+			.text(null);
+		txtLeng
+			.style("display", "none")
+			.text(null);
+		txtSpee
+			.style("display", "none")
+			.text(null);
 		  d3.select(this).transition().duration(200).attr("r", 6*Math.sqrt(d.length/Math.PI));
-		  d3.select(this).style("opacity", (i+10)/(d3.selectAll(data).size()+10));
+		  d3.select(this)
+			.style("opacity", (i+2)/d3.selectAll(data).size())
 	  });
-	  
-  var focus = svg.append("g")
-      .attr("class", "focus")
-      .style("display", "none");
+      
+   var txtDate = svg.append("text")
+		.attr("class", "infoTxt")
+		.attr("x", 0)
+		.attr("y", 0)
+		.style("display", "none")
+		.style("fill", "black");
 
-  focus.append("text")
-      .attr("x", 50)
-      .attr("y", 50)
-      .style("fill", "blue")
-      .style("z-index", 10);
+   var txtHrat = svg.append("text")
+		.attr("class", "infoTxt")
+		.attr("x", 0)
+		.attr("y", 0)
+		.style("display", "none")
+		.style("fill", "black");
+
+   var txtLeng = svg.append("text")
+		.attr("class", "infoTxt")
+		.attr("x", 0)
+		.attr("y", 0)
+		.style("display", "none")
+		.style("fill", "black");
+
+   var txtSpee = svg.append("text")
+		.attr("class", "infoTxt")
+		.attr("x", 0)
+		.attr("y", 0)
+		.style("display", "none")
+		.style("fill", "black");
+		
+   var txtTime = svg.append("text")
+		.attr("class", "infoTxt")
+		.attr("x", 0)
+		.attr("y", 0)
+		.style("display", "none")
+		.style("fill", "black");
+   
+   /*
+   
+   date
+   hrate
+   legth
+   speed
+   time
+   
+   
+   
+   
+   */
 });
 
     </script>

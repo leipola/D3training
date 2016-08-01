@@ -32,9 +32,9 @@ Case 3:
 Rundata:
 ( ) onmouseover
 (x) väriskaala
-( ) X-akselin yksiköt
-( ) animointi - pallot esimerkiksi nollasta paikoilleen ja kokoihinsa
-( ) akselien etiketit
+(?) X-akselin yksiköt
+(x) animointi - pallot esimerkiksi nollasta paikoilleen ja kokoihinsa
+(?) akselien etiketit
 
 Hyödynnetyt esimerkit:
 2: https://bl.ocks.org/mbostock/3902569
