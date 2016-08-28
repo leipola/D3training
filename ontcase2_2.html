@@ -8,20 +8,31 @@
 
 .lineHki {
   fill: none;
-  stroke: steelblue;
-  stroke-width: 0.5px;
+  stroke: blue;
+  stroke-width: 0.8px;
 }
 
 .lineGlo {
   fill: none;
   stroke: red;
-  stroke-width: 0.5px;
+  stroke-width: 0.8px;
 }
 
 .lineZer {
   fill: none;
   stroke: black;
   stroke-width: 0.5px;
+}
+
+.lineSel {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
 }
 
 	</style>
@@ -31,7 +42,7 @@
 	<script>
 
 var svg = d3.select("body").append("svg")
-	.attr("viewBox", "0 0 500 200")
+	.attr("viewBox", "0 0 500 250")
 	.attr("preserveAspectRatio", "xMidYMid meet");
 
 d3.csv("ontcase2_data.csv", type, function(error, data) {
@@ -40,11 +51,11 @@ d3.csv("ontcase2_data.csv", type, function(error, data) {
 
 	var xScale = d3.scaleLinear()
 		.domain(d3.extent(data, function(d) { return d.year; }))
-		.range([50, 450]);
+		.range([10, 450]);
 
 	var yScale = d3.scaleLinear()
 		.domain(d3.extent(data, function(d) { return d.hki; }))
-		.range([200, 0]);
+		.range([210, 10]);
 
 	var line1 = d3.line()
 		.x(function(d) { return xScale(d.year); })
@@ -70,7 +81,6 @@ d3.csv("ontcase2_data.csv", type, function(error, data) {
 
 	svg.append("path")
 		.datum(data)
-		.style("stroke-dasharray", ("3, 3"))
 		.attr("class", "lineZer")
 		.attr("d", line3);
 		
@@ -106,10 +116,88 @@ d3.csv("ontcase2_data.csv", type, function(error, data) {
 		.attr("x2", xScale(2015))
 		.attr("y2", yScale(0.514));
 	
-	svg.append("path")
-		.datum(data)
-		.attr("class", "lineHki")
-		.attr("d", line1);
+	var yearLabel = svg.append("text")
+		.attr("font-size","24px")
+		.attr("x", 10)
+		.attr("y", 20)
+		.style("display", "none")
+		.text("testi");
+		
+	var hkiLabel = svg.append("text")
+		.attr("font-size","12px")
+		.style("fill", "blue")
+		.attr("x", 0)
+		.attr("y", 215)
+		.style("display", "none")
+		.text("testi");
+
+	var gloLabel = svg.append("text")
+		.attr("font-size","12px")
+		.style("fill", "red")
+		.attr("x", 0)
+		.attr("y", 230)
+		.style("display", "none")
+		.text("testi");
+	
+	var valitsin = svg.append("line")
+		.style("stroke", "black")
+		.style("stroke-dasharray", ("5, 5"))
+		.style("display", "none")
+		.attr("class", "lineSel")
+		.attr("x1", 0)
+		.attr("y1", 0)
+		.attr("x2", 0)
+		.attr("y2", 210);
+		
+	svg.append("text")
+		.attr("font-size","8px")
+		.style("fill", "blue")
+		.attr("x", 455)
+		.attr("y", yScale(data[115]["hki"])+2)
+		.text("Helsinki");
+
+	svg.append("text")
+		.attr("font-size","8px")
+		.style("fill", "red")
+		.attr("x", 455)
+		.attr("y", yScale(data[115]["glo"])+2)
+		.text("Maailma");
+
+	svg.append("text")
+		.attr("font-size","8px")
+		.attr("x", 455)
+		.attr("y", 115)
+		.text("keskiarvo");
+
+	svg.append("rect")
+		.attr("class", "overlay")
+		.attr("x", 0)
+		.attr("y", 0)
+		.attr("width", 450)
+		.attr("height", 210)
+		.on("mouseover", function() {
+			yearLabel.style("display", null);
+			hkiLabel.style("display", null);
+			gloLabel.style("display", null);
+			valitsin.style("display", null);
+		})
+		.on("mousemove", mousemove);
+
+function mousemove() {
+	var sijainti = Math.floor(xScale.invert(d3.mouse(this)[0])-1899.5);
+	var hkiLuku = ((+data[sijainti].hki+5.167).toFixed(1)+"°C").replace(/\./g, ',');
+	var gloLuku = ((+data[sijainti].glo+13.9).toFixed(1)+"°C").replace(/\./g, ',');
+	yearLabel.text(data[sijainti].year);
+	hkiLabel
+		.text(hkiLuku)
+		.attr("x", xScale(data[sijainti].year)-10);
+	gloLabel
+		.text(gloLuku)
+		.attr("x", xScale(data[sijainti].year)-10);
+	valitsin
+		.attr("x1", xScale(data[sijainti].year))
+		.attr("x2", xScale(data[sijainti].year));
+}
 
 });
 
