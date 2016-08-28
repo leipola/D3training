@@ -1,40 +1,42 @@
 Dokumentti:
-( ) lisää kuvia, visuaalisuutta
-( ) kauniimmat versiot Tulepin taulukoista
-( ) Uskalin ja Kuuttin kirja vielä kertaalleen läpi
-( ) kunnollista lähdeaineistoa datavisualisoinneista
-( ) Wikipedian korvaaminen D3-historiikissa, SVG:ssä ja Anscombessa
-( ) Case 1:een viivagraafin soveltumattomuus (lähde!)
-( ) Suhde jQueryyn?
-( ) sisällysluettelon fiksaaminen
-( ) tuoretta tietoa 4.0:sta ja sen hyödyistä
+(x) lisää kuvia, visuaalisuutta
+(x) kauniimmat versiot Tulepin taulukoista
+(x) Uskalin ja Kuuttin kirja vielä kertaalleen läpi
+(x) kunnollista lähdeaineistoa datavisualisoinneista
+(x) Wikipedian korvaaminen D3-historiikissa, SVG:ssä ja Anscombessa
+(x) Case 1:een viivagraafin soveltumattomuus (lähde!)
+(x) Suhde jQueryyn?
+(x) sisällysluettelon fiksaaminen
+(x) tuoretta tietoa 4.0:sta ja sen hyödyistä
+(x) viittaukset muihin ONT:teihin?
+(x) DOM mainittava!
+(x) "D3:lla manipuloidaan objekteja datan perustella" tjsp.
+(x) Kuvien lähteet?
+(x) Verkko-ohjelmoinnista jotain?
+(vkl) kunnollinen esitys D3:n toiminnasta
+(vkl) kunnollinen esitys SVG:stä
+(vkl) Case 2:n täydentäminen
+(vkl) lähetä Sirpalle
 
 Case 1:
-( ) päivitä 4.0:aan
+(?) päivitä 4.0:aan
 
 Case 2:
 (x) vaakaviiva nollaan
 (x) labelit kaikille
 (x) onmouseovertiedot
-( ) OMO:on oikea lämpötila (korjaa keskiarvolla)
+(x) OMO:on oikea lämpötila (korjaa keskiarvolla)
 ( ) OMO:on pallero
-( ) jätät tiedot onmouseout:illa!
+(x) jätät tiedot onmouseout:illa!
 ( ) transitio1: nollaviivasta trendiviivaan
 ( ) transitio2: trendiviivasta viivaan ja takaisin
-( ) vuosikymmenkeskiarvot?
+( ) vuosikymmenkeskiarvot? (HKI: -0.517 1,023 / GLO: -0,252 0,514
 ( ) responsiivisuus
 
 Case 3:
 ( ) data
 ( ) näkymät
 ( ) transitiot
-
-Rundata:
-( ) onmouseover
-(x) väriskaala
-(?) X-akselin yksiköt
-(x) animointi - pallot esimerkiksi nollasta paikoilleen ja kokoihinsa
-(?) akselien etiketit
 
 Hyödynnetyt esimerkit:
 2: https://bl.ocks.org/mbostock/3902569

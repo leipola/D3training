@@ -49,6 +49,10 @@ body {
   stroke: steelblue;
 }
 
+.vuosiTxt {
+	font-size:2em;
+}
+
 	</style>
   </head>
   <body>
@@ -63,14 +67,6 @@ var x = d3.scaleLinear()
 	
 var y = d3.scaleLinear()
 .range([height, 0]);
-
-/*var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left");*/
 
 var line1 = d3.line()
 .x(function(d) { return x(d.year); })
@@ -99,17 +95,6 @@ d3.csv("ontcase2_data.csv", type, function(error, data) {
 	x.domain(d3.extent(data, function(d) { return d.year; }));
 	
 	y.domain(d3.extent(data, function(d) { return d.hki; }));
-	
-	//y.domain(d3.extent(data, function(d) { return d.glo; }));
-	
-	/*svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
-
-	svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)*/
 
   svg.append("path")
       .datum(data)
@@ -126,6 +111,14 @@ d3.csv("ontcase2_data.csv", type, function(error, data) {
       .style("stroke-dasharray", ("3, 3"))
       .attr("class", "lineZer")
       .attr("d", line3);
+
+	var selection = svg.append("path")
+		.style("stroke-dasharray", ("1, 1"))
+		.attr("class", "lineZer")
+		.attr("y1", 0)
+		.attr("y2", 100)
+		.attr("x1", 0)
+		.attr("x2", 100);
       
   svg.append("text")
 		.attr("x", width+5)
@@ -143,8 +136,14 @@ d3.csv("ontcase2_data.csv", type, function(error, data) {
 		.text("keskiarvo");
 	
   var focus = svg.append("g")
-      .attr("class", "focus")
+      .attr("class", "focus");
       //.style("display", "none");
+
+var txtVuosi = svg.append("text")
+	.attr("class", "vuosiTxt")
+	.attr("x", 0)
+	.attr("y", 0);
+	//.style("display", "none");
 
   focus.append("text")
       .attr("x", 0)
@@ -155,13 +154,26 @@ d3.csv("ontcase2_data.csv", type, function(error, data) {
       .attr("width", width)
       .attr("height", height)
       .on("mouseover", function() { focus.style("display", null); })
-      .on("mouseout", function() { focus.style("display", "none"); })
+      //.on("mouseout", function() { focus.style("display", "none"); })
       .on("mousemove", mousemove);
       
 function mousemove() {
     var sijainti = Math.floor(x.invert(d3.mouse(this)[0])-1900);
-    console.log(data[sijainti]);
-    focus.select("text").text("Vuosi:" + data[sijainti].year + " Helsinki:" + data[sijainti].hki + " Maailma:" + data[sijainti].glo);
+    //console.log(data[sijainti]);
+    var hkiLuku = ((+data[sijainti].hki+5.167).toFixed(1)+"°C").replace(/\./g, ',');
+    var gloLuku = ((+data[sijainti].glo+13.9).toFixed(1)+"°C").replace(/\./g, ',');
+    focus.select("text").text("Vuosi:" + data[sijainti].year + " Helsinki: +" + hkiLuku + " Maailma: +" + gloLuku);
+    txtVuosi.select("text")
+			.text(data[sijainti].year)
+			.attr("x", 10)
+			.attr("y", 10)
+			.style("opacity", 0)
+			.style("display", null);
+	selection.select("path")
+		.attr("y1", 100)
+		.attr("y2", 0)
+		.attr("x1", 100)
+		.attr("x2", 0);
 }
 
 });
@@ -171,7 +183,7 @@ function type(d) {
   d.hki = +d.hki;
   d.glo = +d.glo;
   return d;
-}
+};
 
 </script>
   </body>

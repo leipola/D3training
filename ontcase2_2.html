@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ONT2</title>
+    <script src="d3v4/d3.min.js"></script>
+	<style>
+
+.lineHki {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 0.5px;
+}
+
+.lineGlo {
+  fill: none;
+  stroke: red;
+  stroke-width: 0.5px;
+}
+
+.lineZer {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+
+	</style>
+</head>
+
+<body>
+	<script>
+
+var svg = d3.select("body").append("svg")
+	.attr("viewBox", "0 0 500 200")
+	.attr("preserveAspectRatio", "xMidYMid meet");
+
+d3.csv("ontcase2_data.csv", type, function(error, data) {
+	
+	if (error) throw error;
+
+	var xScale = d3.scaleLinear()
+		.domain(d3.extent(data, function(d) { return d.year; }))
+		.range([50, 450]);
+
+	var yScale = d3.scaleLinear()
+		.domain(d3.extent(data, function(d) { return d.hki; }))
+		.range([200, 0]);
+
+	var line1 = d3.line()
+		.x(function(d) { return xScale(d.year); })
+		.y(function(d) { return yScale(d.hki); });
+
+	var line2 = d3.line()
+		.x(function(d) { return xScale(d.year); })
+		.y(function(d) { return yScale(d.glo); });
+
+	var line3 = d3.line()
+		.x(function(d) { return xScale(d.year); })
+		.y(function(d) { return yScale(0); });
+
+	svg.append("path")
+		.datum(data)
+		.attr("class", "lineHki")
+		.attr("d", line1);
+
+	svg.append("path")
+		.datum(data)
+		.attr("class", "lineGlo")
+		.attr("d", line2);
+
+	svg.append("path")
+		.datum(data)
+		.style("stroke-dasharray", ("3, 3"))
+		.attr("class", "lineZer")
+		.attr("d", line3);
+		
+	svg.append("line")
+		.style("stroke", "blue")
+		.style("stroke-dasharray", ("1, 1"))
+		.attr("x1", xScale(1900))
+		.attr("y1", yScale(-0.517))
+		.attr("x2", xScale(1929))
+		.attr("y2", yScale(-0.517));
+	
+	svg.append("line")
+		.style("stroke", "blue")
+		.style("stroke-dasharray", ("1, 1"))
+		.attr("x1", xScale(1986))
+		.attr("y1", yScale(1.023))
+		.attr("x2", xScale(2015))
+		.attr("y2", yScale(1.023));
+		
+	svg.append("line")
+		.style("stroke", "red")
+		.style("stroke-dasharray", ("1, 1"))
+		.attr("x1", xScale(1900))
+		.attr("y1", yScale(-0.252))
+		.attr("x2", xScale(1929))
+		.attr("y2", yScale(-0.252));
+	
+	svg.append("line")
+		.style("stroke", "red")
+		.style("stroke-dasharray", ("1, 1"))
+		.attr("x1", xScale(1986))
+		.attr("y1", yScale(0.514))
+		.attr("x2", xScale(2015))
+		.attr("y2", yScale(0.514));
+	
+	svg.append("path")
+		.datum(data)
+		.attr("class", "lineHki")
+		.attr("d", line1);
+
+});
+
+function type(d) {
+	d.year = +d.year;
+	d.hki = +d.hki;
+	d.glo = +d.glo;
+	return d;
+};
+
+	</script>
+</body>
+</html>
+
