@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kuntavaalit</title>
+<style>
+
+</style>
+</head>
+<body>
+<h1>Valitut vihreät 2012 vaaleissa</h1>
+<button class="nappi">Jatka</button>
+<hr />
+<script src="d3v4/d3.min.js"></script>
+<script>
+
+var svg = d3.select("body").append("svg")
+	.attr("viewBox", "0 0 500 400")
+	.attr("preserveAspectRatio", "xMidYMid meet");
+
+var x = d3.scaleLinear()
+	.range([0, 500]);
+
+var y = d3.scaleLinear()
+	.range([400, 0]);
+
+var diameter = 300;
+
+var bubble = d3.pack()
+	//.sort(null)
+	.size([diameter, diameter])
+	.padding(.5);
+
+function vanhat(data) {
+	console.log(data["Alahärmä"]);
+	svg.selectAll(".dot")
+		.data(data)
+		.enter().append("circle")
+		.attr("class", "dot")
+		.attr("cx", 250)
+		.attr("cy", function(d, i) { return i*30; })
+		.style("fill", "darkgreen")
+		.transition()
+			.duration(800)
+			.attr("r", 10);
+}
+
+function uudet(data) {
+		// TÄSSÄ PIIRRETÄÄN 2017 TULOS
+}
+
+function kartta(data) {
+		// TÄSSÄ PIIRRETÄÄN KARTTA
+}
+
+function nostot(data) {
+		// TÄSSÄ PIIRRETÄÄN NOSTOT
+}
+
+d3.json("ontcase3_data.json", function(error, data) {
+	if (error) throw error;
+	/*data.forEach(function(d) {
+		d.date = +d.date;
+		d.length = +d.length;
+		d.time = +d.time;
+		d.hrate = +d.hrate;
+		d.speed = +d.speed;
+	});*/
+	vanhat(data);
+});
+
+d3.select(".nappi")
+	.on("click", function(){
+			uudet(data);
+	});
+
+</script>
+Sources:
+http://bl.ocks.org/mbostock/4063269
+</body>
+</html>

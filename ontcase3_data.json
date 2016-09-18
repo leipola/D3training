@@ -1,0 +1,47 @@
+{
+  "Alahärmä": {
+    "totvotes": 1000,
+    "lon": 10,
+    "lat": 10,
+    "Valitut": {
+      "Timo Testi": {
+        "status": 0,
+        "age": 25,
+        "pervotes": 100,
+        "url": "http://www.leipola.com/"
+      },
+      "Simo Sesti": {
+        "status": 1,
+        "age": 45,
+        "pervotes": 150,
+        "url": "http://www.leipola.com/"
+      }
+    }
+  },
+  "Kulloo": {
+    "totvotes": 2000,
+    "lon": 15,
+    "lat": 20,
+    "Valitut": {
+      "Elli Esimerkki": {
+        "status": 1,
+        "age": 35,
+        "pervotes": 800,
+        "url": "http://www.leipola.com/"
+      }
+    }
+  },
+  "Utti": {
+    "totvotes": 400,
+    "lon": 5,
+    "lat": 5,
+    "Valitut": {
+      "Kaarlo Kokeilu": {
+        "status": 2,
+        "age": 55,
+        "pervotes": 80,
+        "url": "http://www.leipola.com/"
+      }
+    }
+  }
+}
