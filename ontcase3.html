@@ -27,22 +27,42 @@ var y = d3.scaleLinear()
 var diameter = 300;
 
 var bubble = d3.pack()
-	//.sort(null)
-	.size([diameter, diameter])
-	.padding(.5);
+	.size([diameter, diameter]);
+	
+var data = [];
+var page = 0;
 
-function vanhat(data) {
-	console.log(data["Alahärmä"]);
-	svg.selectAll(".dot")
-		.data(data)
-		.enter().append("circle")
-		.attr("class", "dot")
-		.attr("cx", 250)
-		.attr("cy", function(d, i) { return i*30; })
-		.style("fill", "darkgreen")
-		.transition()
+function vaihda(data, page) {
+
+switch(page) {
+    case 0:
+        svg.selectAll(".dot")
+			.data(data)
+			.enter().append("circle")
+			.attr("class", "dot")
+			.attr("cx", 250)
+			.attr("cy", function(d, i) { return 30+i*10; })
+			.style("fill", "darkgreen")
+			.transition()
+				.duration(800)
+				.attr("r", function(d) { return d.pervotes/100; });
+        break;
+    case 1:
+        svg.selectAll(".dot")
+        .transition()
 			.duration(800)
-			.attr("r", 10);
+			.attr("class", "dot")
+			.attr("cx", 200)
+			.attr("cy", function(d, i) { return 30+i*10; })
+			.style("fill", "red")	
+			.attr("r", function(d) { return d.pervotes/50; });
+		break;
+	case 2:
+		console.log("LOPPU");
+} 
+
+
+			
 }
 
 function uudet(data) {
@@ -57,21 +77,30 @@ function nostot(data) {
 		// TÄSSÄ PIIRRETÄÄN NOSTOT
 }
 
-d3.json("ontcase3_data.json", function(error, data) {
+d3.json("ontcase3_data.json", function(error, json) {
 	if (error) throw error;
-	/*data.forEach(function(d) {
-		d.date = +d.date;
-		d.length = +d.length;
-		d.time = +d.time;
-		d.hrate = +d.hrate;
-		d.speed = +d.speed;
-	});*/
-	vanhat(data);
+	json.tulokset.forEach(function(d) {
+		var kuntaNimi = d.name;
+		var kuntaVotes = d.totvotes;
+		var kuntaLon = d.lon;
+		var kuntaLat = d.lat;
+		d.children.forEach(function(d) {
+			//console.log(d);
+			var tiedot = [];
+			d.kname = kuntaNimi;
+			d.totvotes = kuntaVotes;
+			d.lon = kuntaLon;
+			d.lat = kuntaLat;
+			data.push(d);
+		});
+	});
+	vaihda(data, 0);
 });
 
 d3.select(".nappi")
 	.on("click", function(){
-			uudet(data);
+			page = page+1;
+			vaihda(data, page);
 	});
 
 </script>
