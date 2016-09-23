@@ -1,47 +1,34 @@
 {
-  "Alahärmä": {
-    "totvotes": 1000,
-    "lon": 10,
-    "lat": 10,
-    "Valitut": {
-      "Timo Testi": {
-        "status": 0,
-        "age": 25,
-        "pervotes": 100,
-        "url": "http://www.leipola.com/"
-      },
-      "Simo Sesti": {
-        "status": 1,
-        "age": 45,
-        "pervotes": 150,
-        "url": "http://www.leipola.com/"
-      }
-    }
-  },
-  "Kulloo": {
-    "totvotes": 2000,
-    "lon": 15,
-    "lat": 20,
-    "Valitut": {
-      "Elli Esimerkki": {
-        "status": 1,
-        "age": 35,
-        "pervotes": 800,
-        "url": "http://www.leipola.com/"
-      }
-    }
-  },
-  "Utti": {
-    "totvotes": 400,
-    "lon": 5,
-    "lat": 5,
-    "Valitut": {
-      "Kaarlo Kokeilu": {
-        "status": 2,
-        "age": 55,
-        "pervotes": 80,
-        "url": "http://www.leipola.com/"
-      }
-    }
-  }
+	"tulokset":
+		[{"name": "Alahärmä",
+		"totvotes": 1000,
+		"lon": 10,
+		"lat": 10,
+		"children": [
+			{"name": "Timo Testi", "status": 0, "age": 25, "pervotes": 100, "url": "http://www.leipola.com/"},
+			{"name": "Simo Sesti", "status": 1, "age": 45, "pervotes": 150, "url": "http://www.leipola.com/"}
+		]},
+		{"name": "Kulloo",
+		"totvotes": 3000,
+		"lon": 20,
+		"lat": 30,
+		"children": [
+			{"name": "Essi Esimerkki", "status": 2, "age": 20, "pervotes": 800, "url": "http://www.leipola.com/"},
+			{"name": "Kalle Kokeilu", "status": 1, "age": 35, "pervotes": 50, "url": "http://www.leipola.com/"},
+			{"name": "Essi Esimerkki", "status": 2, "age": 20, "pervotes": 800, "url": "http://www.leipola.com/"},
+			{"name": "Kalle Kokeilu", "status": 0, "age": 35, "pervotes": 50, "url": "http://www.leipola.com/"},
+			{"name": "Essi Esimerkki", "status": 2, "age": 20, "pervotes": 800, "url": "http://www.leipola.com/"},
+			{"name": "Kalle Kokeilu", "status": 1, "age": 35, "pervotes": 50, "url": "http://www.leipola.com/"}
+		]},
+		{"name": "Utti",
+		"totvotes": 3500,
+		"lon": 5,
+		"lat": 15,
+		"children": [
+			{"name": "Ville Vihreä", "status": 0, "age": 65, "pervotes": 350, "url": "http://www.leipola.com/"},
+			{"name": "Henry Hippi", "status": 2, "age": 20, "pervotes": 500, "url": "http://www.leipola.com/"},
+			{"name": "Ville Vihreä", "status": 0, "age": 65, "pervotes": 350, "url": "http://www.leipola.com/"},
+			{"name": "Henry Hippi", "status": 2, "age": 20, "pervotes": 500, "url": "http://www.leipola.com/"},
+			{"name": "Tero Tekno", "status": 1, "age": 35, "pervotes": 250, "url": "http://www.leipola.com/"}
+		]}]
 }

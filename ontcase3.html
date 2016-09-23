@@ -15,67 +15,92 @@
 <script>
 
 var svg = d3.select("body").append("svg")
-	.attr("viewBox", "0 0 500 400")
-	.attr("preserveAspectRatio", "xMidYMid meet");
+	.attr("width", 500) // POIS
+	.attr("height", 500) // POIS
+	/*.attr("viewBox", "0 0 500 500")
+	.attr("preserveAspectRatio", "xMidYMid meet");*/
 
 var x = d3.scaleLinear()
 	.range([0, 500]);
 
 var y = d3.scaleLinear()
-	.range([400, 0]);
-
-var diameter = 300;
-
-var bubble = d3.pack()
-	.size([diameter, diameter]);
+	.range([500, 0]);
 	
 var data = [];
 var page = 0;
 
 function vaihda(data, page) {
-
-switch(page) {
-    case 0:
-        svg.selectAll(".dot")
-			.data(data)
-			.enter().append("circle")
-			.attr("class", "dot")
-			.attr("cx", 250)
-			.attr("cy", function(d, i) { return 30+i*10; })
-			.style("fill", "darkgreen")
+	console.log("sivu:" + page);
+	if (page == 0) {
+		svg.selectAll(".dot")
 			.transition()
 				.duration(800)
-				.attr("r", function(d) { return d.pervotes/100; });
-        break;
-    case 1:
-        svg.selectAll(".dot")
-        .transition()
-			.duration(800)
-			.attr("class", "dot")
-			.attr("cx", 200)
-			.attr("cy", function(d, i) { return 30+i*10; })
-			.style("fill", "red")	
-			.attr("r", function(d) { return d.pervotes/50; });
-		break;
-	case 2:
-		console.log("LOPPU");
-} 
-
-
-			
+				.style("fill", "darkgreen")
+				.attr("r", function(d) {
+					if (d.status == 2) {
+						return 0;
+					} else {
+						return 5;
+					};
+				})
+				.attr("transform", function() {
+					var angle = (Math.random() * Math.PI * 2);
+					var radius = (Math.random() * 200);
+					var deltax = 100;
+					var deltay =  -100;
+					if (angle < Math.PI/2) {
+						var deltax = Math.sin(angle)*radius;
+						var deltay = -Math.cos(angle)*radius;
+					} else if (angle < Math.PI) {
+						angle = angle - Math.PI/2;
+						var deltax = Math.sin(angle)*radius;
+						var deltay = Math.cos(angle)*radius;
+					} else if (angle < Math.PI*1.5) {
+						angle = angle - Math.PI;
+						var deltax = -Math.sin(angle)*radius;
+						var deltay = Math.cos(angle)*radius;
+					} else {
+						angle = angle - Math.PI*1.5
+						var deltax = -Math.sin(angle)*radius;
+						var deltay = -Math.cos(angle)*radius;
+					}
+					var tulos = deltax + "," + deltay;
+					return "translate(" + tulos + ")";
+				});
+	} else if (page == 1) {
+		svg.selectAll(".status0")
+			.transition()
+				.duration(1000)
+				.style("fill", "white")
+				.attr("cy", 500);
+		
+		svg.selectAll(".status2")
+			.transition()
+				.duration(1000)
+				.style("fill", "limegreen")
+				.attr("r", 5);
+	} else if (page == 2) {
+		svg.selectAll(".dot")
+			.data(data)
+			.transition()
+				.duration(1000)
+				.attr("cx", 20)
+				.attr("cy", 20);
+	} else if (page == 3) {
+		console.log("KUNKUT");
+	} else {
+		page = 0;
+		vaihda(data, 0);
+	}
 }
 
-function uudet(data) {
-		// TÄSSÄ PIIRRETÄÄN 2017 TULOS
-}
-
-function kartta(data) {
-		// TÄSSÄ PIIRRETÄÄN KARTTA
-}
-
-function nostot(data) {
-		// TÄSSÄ PIIRRETÄÄN NOSTOT
-}
+d3.select(".nappi")
+	.on("click", function(){
+			if (page == 3) { page = -1; };
+			console.log("nappi");
+			page = page+1;
+			vaihda(data, page);
+	});
 
 d3.json("ontcase3_data.json", function(error, json) {
 	if (error) throw error;
@@ -85,7 +110,6 @@ d3.json("ontcase3_data.json", function(error, json) {
 		var kuntaLon = d.lon;
 		var kuntaLat = d.lat;
 		d.children.forEach(function(d) {
-			//console.log(d);
 			var tiedot = [];
 			d.kname = kuntaNimi;
 			d.totvotes = kuntaVotes;
@@ -94,14 +118,21 @@ d3.json("ontcase3_data.json", function(error, json) {
 			data.push(d);
 		});
 	});
+	
+	svg.selectAll(".dot")
+		.data(data)
+		.enter().append("circle")
+			.attr("class", function(d) {
+				var luokka = "dot status" + d.status;
+				return luokka;
+			})
+			.attr("cx", 250)
+			.attr("cy", 250)
+			.attr("r", 0)
+			.style("fill", "darkgreen");
+	
 	vaihda(data, 0);
 });
-
-d3.select(".nappi")
-	.on("click", function(){
-			page = page+1;
-			vaihda(data, page);
-	});
 
 </script>
 Sources:
