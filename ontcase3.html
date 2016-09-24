@@ -8,7 +8,7 @@
 </style>
 </head>
 <body>
-<h1>Valitut vihreät 2012 vaaleissa</h1>
+<h1>XXX</h1>
 <button class="nappi">Jatka</button>
 <hr />
 <script src="d3v4/d3.min.js"></script>
@@ -21,16 +21,18 @@ var svg = d3.select("body").append("svg")
 	.attr("preserveAspectRatio", "xMidYMid meet");*/
 
 var x = d3.scaleLinear()
+	.domain([18, 45])
 	.range([0, 500]);
 
 var y = d3.scaleLinear()
+	.domain([58, 72])
 	.range([500, 0]);
 	
 var data = [];
 var page = 0;
 
 function vaihda(data, page) {
-	console.log("sivu:" + page);
+	//console.log("sivu:" + page);
 	if (page == 0) {
 		svg.selectAll(".dot")
 			.transition()
@@ -80,12 +82,45 @@ function vaihda(data, page) {
 				.style("fill", "limegreen")
 				.attr("r", 5);
 	} else if (page == 2) {
+		//console.log(data);
 		svg.selectAll(".dot")
 			.data(data)
 			.transition()
 				.duration(1000)
-				.attr("cx", 20)
-				.attr("cy", 20);
+				.attr("transform", "translate(0,0)")
+				.attr("cx", function(d) { return x(d.lon); })
+				.attr("cy", function(d) { return y(d.lat); })
+				.attr("r", 0);
+				
+		var kuntaData = [];
+		
+		d3.json("ontcase3_data.json", function(error, json) {
+			if (error) throw error;
+			
+			json.tulokset.forEach(function(d) {
+				var kunta = {name: d.name, totvotes: d.totvotes, lon: d.lon, lat: d.lat};
+				kunta.kuntaPaikat = d.children.length;
+				var nimet = [];
+				d.children.forEach(function(d) {
+					nimet.push(d.name);
+				});
+				kunta.nimet = nimet;
+				kuntaData.push(kunta);
+			});
+			kaupungit(kuntaData);
+		});
+		
+		function kaupungit(kuntaData) {
+			svg.selectAll(".city")
+			.data(kuntaData)
+			.enter().append("circle")
+				.attr("class", "city")
+				.attr("cx", function(d) { console.log(x(d.lon)); return x(d.lon); })
+				.attr("cy", function(d) { return y(d.lat); })
+				.attr("r", function(d) { return d.kuntaPaikat; })
+				.style("fill", "darkgreen");
+		};
+			
 	} else if (page == 3) {
 		console.log("KUNKUT");
 	} else {
@@ -97,7 +132,7 @@ function vaihda(data, page) {
 d3.select(".nappi")
 	.on("click", function(){
 			if (page == 3) { page = -1; };
-			console.log("nappi");
+			//console.log("nappi");
 			page = page+1;
 			vaihda(data, page);
 	});
@@ -110,7 +145,6 @@ d3.json("ontcase3_data.json", function(error, json) {
 		var kuntaLon = d.lon;
 		var kuntaLat = d.lat;
 		d.children.forEach(function(d) {
-			var tiedot = [];
 			d.kname = kuntaNimi;
 			d.totvotes = kuntaVotes;
 			d.lon = kuntaLon;
@@ -130,6 +164,7 @@ d3.json("ontcase3_data.json", function(error, json) {
 			.attr("cy", 250)
 			.attr("r", 0)
 			.style("fill", "darkgreen");
+	//console.log(data);
 	
 	vaihda(data, 0);
 });
