@@ -57,219 +57,213 @@ var y = d3.scaleLinear()
 	.range([500, 0]);
 	
 var data = [];
-var page = 0;
 var pudokkaat = 0;
 var jatkajat = 0;
 var uudet = 0;
 
-function vaihda(data, page) {
-	//console.log("sivu:" + page);
-	if (page == 0) {
-		console.log(pudokkaat + "/" + jatkajat + "/" + uudet);
-		svg.selectAll(".dot")
-			.transition()
-				.duration(1500)
-				.style("fill", "darkgreen")
-				.attr("r", function(d) {
-					if (d.status == 2) {
-						return 0;
-					} else {
-						return 3;
-					};
-				})
-				.attr("transform", function() {
-					var angle = (Math.random() * Math.PI * 2);
-					var radius = (Math.random() * 240);
-					var deltax = 100;
-					var deltay =  -100;
-					if (angle < Math.PI/2) {
-						var deltax = Math.sin(angle)*radius;
-						var deltay = -Math.cos(angle)*radius;
-					} else if (angle < Math.PI) {
-						angle = angle - Math.PI/2;
-						var deltax = Math.sin(angle)*radius;
-						var deltay = Math.cos(angle)*radius;
-					} else if (angle < Math.PI*1.5) {
-						angle = angle - Math.PI;
-						var deltax = -Math.sin(angle)*radius;
-						var deltay = Math.cos(angle)*radius;
-					} else {
-						angle = angle - Math.PI*1.5
-						var deltax = -Math.sin(angle)*radius;
-						var deltay = -Math.cos(angle)*radius;
-					}
-					var tulos = deltax + "," + deltay;
-					return "translate(" + tulos + ")";
-				});
-			svg.append("rect")
-				.attr("class", "narrator")
-				.style("fill", "white")
-				.transition(1000)
-				.attr("x", 0)
-				.attr("y", 200)
-				.attr("width", 500)
-				.attr("height", 100)
-				.style("opacity", 0.8);
-			svg.append("text")
-				.style("opacity", 0)
-				.attr("class", "narrator")
-				.style("fill", "darkgreen")
-				.attr("x", 80)
-				.attr("y", 240)
-				.transition(1000)
-				.style("opacity", 1)
-				.text(function() {
-					var luku = pudokkaat + jatkajat;
-					return "Vaaleissa 2012 valittiin " + luku + " vihreää valtuutettua";
-				});
-			setTimeout(function() {
-				vaihda(data, 1);
-			}, 3000);
-				
-	} else if (page == 1) {
-		svg.selectAll(".status0")
-			.transition()
-				.duration(2000)
-				.style("fill", "white")
-				.attr("cy", 500);
-		svg.selectAll(".status2")
-			.transition()
-				.duration(2000)
-				.style("fill", "limegreen")
-				.attr("r", 6);
-		svg.append("text")
-			.style("opacity", 0)
-			.attr("class","narrator")
+function aloitus(data) {
+	svg.selectAll(".dot")
+		.transition()
+			.duration(1500)
 			.style("fill", "darkgreen")
-			.attr("x", 30)
-			.attr("y", 270)
-			.transition(2500)
+			.attr("r", function(d) {
+				if (d.status == 2) {
+					return 0;
+				} else {
+					return 3;
+				};
+			})
+			.attr("transform", function() {
+				var angle = (Math.random() * Math.PI * 2);
+				var radius = (Math.random() * 240);
+				var deltax = 100;
+				var deltay =  -100;
+				if (angle < Math.PI/2) {
+					var deltax = Math.sin(angle)*radius;
+					var deltay = -Math.cos(angle)*radius;
+				} else if (angle < Math.PI) {
+					angle = angle - Math.PI/2;
+					var deltax = Math.sin(angle)*radius;
+					var deltay = Math.cos(angle)*radius;
+				} else if (angle < Math.PI*1.5) {
+					angle = angle - Math.PI;
+					var deltax = -Math.sin(angle)*radius;
+					var deltay = Math.cos(angle)*radius;
+				} else {
+					angle = angle - Math.PI*1.5
+					var deltax = -Math.sin(angle)*radius;
+					var deltay = -Math.cos(angle)*radius;
+				}
+				var tulos = deltax + "," + deltay;
+				return "translate(" + tulos + ")";
+			});
+	svg.append("rect")
+		.attr("class", "narrator")
+		.style("fill", "white")
+		.transition(1000)
+			.attr("x", 0)
+			.attr("y", 200)
+			.attr("width", 500)
+			.attr("height", 100)
+			.style("opacity", 0.8);
+	svg.append("text")
+		.style("opacity", 0)
+		.attr("class", "narrator")
+		.style("fill", "darkgreen")
+		.attr("x", 80)
+		.attr("y", 240)
+		.transition(1000)
+			.style("opacity", 1)
+			.text(function() {
+				var luku = pudokkaat + jatkajat;
+				return "Vaaleissa 2012 valittiin " + luku + " vihreää valtuutettua.";
+			});
+};
+
+function jatko(data) {		
+	svg.selectAll(".status0")
+		.transition()
+			.duration(2000)
+			.style("fill", "white")
+			.attr("cy", 500);
+	svg.selectAll(".status2")
+		.transition()
+			.duration(2000)
+			.style("fill", "limegreen")
+			.attr("r", 6);
+	svg.append("text")
+		.style("opacity", 0)
+		.attr("class","narrator")
+		.style("fill", "darkgreen")
+		.attr("x", 30)
+		.attr("y", 270)
+		.transition(2500)
 			.style("opacity", 1)
 			.text(function() {
 				var lause = "Heistä " + pudokkaat + " luopui paikastaan tai putosi, mutta uusia valittiin " + uudet + ".";
 				return lause;
 			});
-		setTimeout(function() {
-				vaihda(data, 2);
-			}, 5000);
-	} else if (page == 2) {
-		
-		d3.selectAll(".narrator").remove();
-		
-		svg.append("text")
-			.text("Suomen")
-			.attr("class", "otsake")
-			.attr("x", 360)
-			.attr("y", 20)
-			.style("fill", "black");
-		svg.append("text")
-			.text(function() {
-				return jatkajat + uudet;
-			})
-			.attr("class", "numba")
-			.attr("x", 360)
-			.attr("y", 80)
-			.style("fill", "limegreen");
-		svg.append("text")
-			.text("vihreää")
-			.attr("class", "otsake")
-			.attr("x", 360)
-			.attr("y", 100)
-			.style("fill", "black");
-		svg.append("text")
-			.text("valtuutettua")
-			.attr("class", "otsake")
-			.attr("x", 360)
-			.attr("y", 120)
-			.style("fill", "black");
-		
-		svg.selectAll(".dot")
-			.data(data)
-			.transition()
-				.duration(1000)
-				.attr("transform", "translate(0,0)")
-				.attr("cx", function(d) { return x(d.lon); })
-				.attr("cy", function(d) { return y(d.lat); })
-				.attr("r", 0);
-				
-		var kuntaData = [];
-		
-		d3.json("oikeakuntadata.json", function(error, json) {
-			if (error) throw error;
-			
-			json.tulokset.forEach(function(d) {
-				var kunta = {name: d.name, totvotes: d.totvotes, lon: d.lon, lat: d.lat};
-				var nimet = [];
-				d.children.forEach(function(d) {
-					if (d.status != 0) {
-						nimet.push(d.name);
-					};
-				});
-				kunta.nimet = nimet;
-				kunta.kuntaPaikat = nimet.length;
-				kuntaData.push(kunta);
-			});
-			kaupungit(kuntaData);
-		});
-		
-		function kaupungit(kuntaData) {
-			svg.selectAll(".city")
-			.data(kuntaData)
-			.enter().append("circle")
-				.attr("class", "city")
-				.attr("cx", function(d) { return x(d.lon); })
-				.attr("cy", function(d) { return y(d.lat); })
-				.attr("r", function(d) { return 2*Math.sqrt(d.kuntaPaikat/Math.PI); })
-				.style("fill", "limegreen")
-			.on("mouseover", function(d) {
-				console.log(d);
-				d3.select(this)
-					.transition()
-					.duration(200)
-					.attr("r", 50);
-				svg.append("text")
-					.text(d.name)
-					.attr("class", "kuntaNimi")
-					.attr("x", x(d.lon)-d.name.length*3)
-					.attr("y", y(d.lat)+5)
-					.style("fill", "black");
-				svg.append("text")
-					.text("Valitut:")
-					.attr("class", "nimiLista boldattu")
-					.attr("x", 360)
-					.attr("y", 150)
-					.style("fill", "black");
-				d.nimet.forEach(function(d, i) {
-					svg.append("text")
-						.text(d)
-						.attr("class", "nimiLista")
-						.attr("x", 360)
-						.attr("y", 166+16*i)
-						.style("fill", "black");
-				});
-
-			})
-			.on("mouseout", function(d) {
-				d3.select(this).transition().duration(400).attr("r", function(d) { return 2*Math.sqrt(d.kuntaPaikat/Math.PI); });
-				d3.selectAll(".nimiLista").remove();
-				d3.selectAll(".kuntaNimi").remove();
-			});
-		};
-			
-	} else if (page == 3) {
-		console.log("KUNKUT");
-	} else {
-		page = 0;
-		vaihda(data, 0);
-	}
 }
 
-d3.select(".nappi")
-	.on("click", function(){
-			if (page == 3) { page = -1; };
-			page = page+1;
-			vaihda(data, page);
+function kartta(data) {	
+	d3.selectAll(".narrator").remove();
+		
+	svg.append("text")
+		.style("opacity", 0)
+		.text("Suomen")
+		.attr("class", "otsake")
+		.attr("x", 360)
+		.attr("y", 20)
+		.style("fill", "black")
+		.transition()
+			.duration(1000)
+			.style("opacity", 1);
+	svg.append("text")
+		.style("opacity", 0)
+		.text(function() {
+			return jatkajat + uudet;
+		})
+		.attr("class", "numba")
+		.attr("x", 360)
+		.attr("y", 80)
+		.style("fill", "limegreen")
+		.transition()
+			.duration(1400)
+			.style("opacity", 1);
+	svg.append("text")
+		.style("opacity", 0)
+		.text("vihreää")
+		.attr("class", "otsake")
+		.attr("x", 360)
+		.attr("y", 100)
+		.style("fill", "black")
+		.transition()
+			.duration(1800)
+			.style("opacity", 1);
+	svg.append("text")
+		.style("opacity", 0)
+		.text("valtuutettua")
+		.attr("class", "otsake")
+		.attr("x", 360)
+		.attr("y", 120)
+		.style("fill", "black")
+		.transition()
+			.duration(2200)
+			.style("opacity", 1);
+		
+	svg.selectAll(".dot")
+		.data(data)
+		.transition()
+			.duration(1000)
+			.attr("transform", "translate(0,0)")
+			.attr("cx", function(d) { return x(d.lon); })
+			.attr("cy", function(d) { return y(d.lat); })
+			.attr("r", 0);
+				
+	var kuntaData = [];
+		
+	d3.json("oikeakuntadata.json", function(error, json) {
+		if (error) throw error;
+			
+		json.tulokset.forEach(function(d) {
+			var kunta = {name: d.name, totvotes: d.totvotes, lon: d.lon, lat: d.lat};
+			var nimet = [];
+			d.children.forEach(function(d) {
+				if (d.status != 0) {
+					nimet.push(d.name);
+				};
+			});
+			kunta.nimet = nimet;
+			kunta.kuntaPaikat = nimet.length;
+			kuntaData.push(kunta);
+		});
+		kaupungit(kuntaData);
 	});
+		
+	function kaupungit(kuntaData) {
+		svg.selectAll(".city")
+		.data(kuntaData)
+		.enter().append("circle")
+			.attr("class", "city")
+			.attr("cx", function(d) { return x(d.lon); })
+			.attr("cy", function(d) { return y(d.lat); })
+			.attr("r", function(d) { return 2*Math.sqrt(d.kuntaPaikat/Math.PI); })
+			.style("fill", "limegreen")
+		.on("mouseover", function(d) {
+			d3.select(this)
+				.transition()
+					.duration(200)
+					.attr("r", 50);
+			svg.append("text")
+				.text(d.name)
+				.attr("class", "kuntaNimi")
+				.attr("x", x(d.lon)-d.name.length*3)
+				.attr("y", y(d.lat)+5)
+				.style("fill", "black");
+			svg.append("text")
+				.text("Valitut:")
+				.attr("class", "nimiLista boldattu")
+				.attr("x", 360)
+				.attr("y", 150)
+				.style("fill", "black");
+			d.nimet.forEach(function(d, i) {
+				svg.append("text")
+					.text(d)
+					.attr("class", "nimiLista")
+					.attr("x", 360)
+					.attr("y", 166+16*i)
+					.style("fill", "black");
+			});
+
+		})
+		.on("mouseout", function(d) {
+			d3.select(this).transition().duration(400).attr("r", function(d) { return 2*Math.sqrt(d.kuntaPaikat/Math.PI); });
+			d3.selectAll(".nimiLista").remove();
+			d3.selectAll(".kuntaNimi").remove();
+		});
+	};
+
+}
 
 d3.json("oikeakuntadata.json", function(error, json) {
 	if (error) throw error;
@@ -305,12 +299,19 @@ d3.json("oikeakuntadata.json", function(error, json) {
 			.attr("cy", 250)
 			.attr("r", 0)
 			.style("fill", "darkgreen");
+	console.log("Alkoi");
+	aloitus(data);
+	console.log("Eka");
+	setTimeout(function() {
+		jatko(data);
+	}, 3000);
+	console.log("Toka");
+	setTimeout(function() {
+		kartta(data);
+	}, 9000);
 	
-	vaihda(data, 0);
 });
 
 </script>
-Sources:
-http://bl.ocks.org/mbostock/4063269
 </body>
 </html>

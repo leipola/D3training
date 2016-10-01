@@ -1,44 +1,29 @@
-Dokumentti:
-(x) lisää kuvia, visuaalisuutta
-(x) kauniimmat versiot Tulepin taulukoista
-(x) Uskalin ja Kuuttin kirja vielä kertaalleen läpi
-(x) kunnollista lähdeaineistoa datavisualisoinneista
-(x) Wikipedian korvaaminen D3-historiikissa, SVG:ssä ja Anscombessa
-(x) Case 1:een viivagraafin soveltumattomuus (lähde!)
-(x) Suhde jQueryyn?
-(x) sisällysluettelon fiksaaminen
-(x) tuoretta tietoa 4.0:sta ja sen hyödyistä
-(x) viittaukset muihin ONT:teihin?
-(x) DOM mainittava!
-(x) "D3:lla manipuloidaan objekteja datan perustella" tjsp.
-(x) Kuvien lähteet?
-(x) Verkko-ohjelmoinnista jotain?
-(vkl) kunnollinen esitys D3:n toiminnasta
-(vkl) kunnollinen esitys SVG:stä
-(vkl) Case 2:n täydentäminen
-(vkl) lähetä Sirpalle
-
-Case 1:
-(?) päivitä 4.0:aan
-
-Case 2:
-(x) vaakaviiva nollaan
-(x) labelit kaikille
-(x) onmouseovertiedot
-(x) OMO:on oikea lämpötila (korjaa keskiarvolla)
-( ) OMO:on pallero
-(x) jätät tiedot onmouseout:illa!
-( ) transitio1: nollaviivasta trendiviivaan
-( ) transitio2: trendiviivasta viivaan ja takaisin
-( ) vuosikymmenkeskiarvot? (HKI: -0.517 1,023 / GLO: -0,252 0,514
-( ) responsiivisuus
-
 Case 3:
-( ) data
-( ) näkymät
-( ) transitiot
+(x) otsikon vaihtaminen
+(x)	selitystekstit
+(?) takaisin-nappi
+(x) page 1 (2012)
+(x) page 2 (2017)
+(x) page 3 (kartta)
+(?) page 4 (lärvät)
+( ) oikea data
+(?) dataan sukupuoli ja ääni-ranking
+(x) myöhempien valintojen rajaaminen vain 2017 valittuihin
+(x) kartan onmouseover
+(?) kartan toiminnallisuus
+(x) kunnan nimi
+(x) nimilista
+(x) valittumäärien laskeminen ja näyttäminen
+( ) ulottuvuuksien säätäminen lopullisen datan mukaan
+(?) taustakartta
 
 Hyödynnetyt esimerkit:
 2: https://bl.ocks.org/mbostock/3902569
 2: http://bl.ocks.org/mbostock/3884955
 2: http://bl.ocks.org/mbostock/3883245
+
+
+Kuntien koordinaattitiedot on hankittu MapQuest-palvelusta Yleisradion Teemo Tebestin (2013: http://datajournalismi.blogspot.fi/2013/03/suomen-kuntien-koordinaattitiedot.html Luettu: 25.9.2016) Datajournalismi-blogissa esittelemää keinoa hyväksikäyttämällä.
+Suomen Kuntaliiton ajantasaisen listan (http://www.kunnat.net/fi/tietopankit/tilastot/aluejaot/Sivut/default.aspx Luettu: 25.9.2016) kunnat muutettiin ensin CSV-muotoon lisäten jokaiselle riville toiseksi arvoksi "Finland", jottei joukkoon tule vahinko-osumia ulkomailta.
+Tämä CSV-muotoinen lista ajettiin GPS Visualizerin Geocoder-palvelun läpi ja lopputuloksena saatiin lista koordinaatiesta.
+Tämän jälkeen on käsin korjattu ne kolme kuntaa (http://www.kunnat.net/fi/palvelualueet/kuntaliitokset/ajankohtaistilanne/Sivut/default.aspx), jotka liittyvät toisiinsa vuoden 2017 alussa. Vuoden 2012 jälkeen tapahtuneiden muutosten osalta 2012 vaaleissa valitut on merkitty uuteen kuntaansa. Vaikka tämä ei pidä tarkalleen ottaen paikkaansa, haitta on vähäinen, koska vuoden 2012 vaalitulosta ei esitetä palvelussa kuntatasolla. Eri kuntien valtuustoihin vuosien 2012 ja 2017 vaaleissa valitut esitetään sekä pudonneiden että uusien joukossa, koska oman kuntansa kohdalla he ovat juuri tätä.
