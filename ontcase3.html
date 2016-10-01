@@ -20,12 +20,25 @@
 		font-weight: 700;
 	}
 	
+	.narrator {
+		font-family: Arial;
+		font-size: 1.0em;
+	}
+	
+	.otsake {
+		font-family: Arial;
+		font-size: 1.3em;
+	}
+	
+	.numba {
+		font-family: Arial;
+		font-size: 4.3em;
+		font-weight: 700;
+	}
+	
 </style>
 </head>
 <body>
-<h1>XXX</h1>
-<button class="nappi">Jatka</button>
-<hr />
 <script src="d3v4/d3.min.js"></script>
 <script>
 
@@ -45,13 +58,17 @@ var y = d3.scaleLinear()
 	
 var data = [];
 var page = 0;
+var pudokkaat = 0;
+var jatkajat = 0;
+var uudet = 0;
 
 function vaihda(data, page) {
 	//console.log("sivu:" + page);
 	if (page == 0) {
+		console.log(pudokkaat + "/" + jatkajat + "/" + uudet);
 		svg.selectAll(".dot")
 			.transition()
-				.duration(800)
+				.duration(1500)
 				.style("fill", "darkgreen")
 				.attr("r", function(d) {
 					if (d.status == 2) {
@@ -84,19 +101,87 @@ function vaihda(data, page) {
 					var tulos = deltax + "," + deltay;
 					return "translate(" + tulos + ")";
 				});
+			svg.append("rect")
+				.attr("class", "narrator")
+				.style("fill", "white")
+				.transition(1000)
+				.attr("x", 0)
+				.attr("y", 200)
+				.attr("width", 500)
+				.attr("height", 100)
+				.style("opacity", 0.8);
+			svg.append("text")
+				.style("opacity", 0)
+				.attr("class", "narrator")
+				.style("fill", "darkgreen")
+				.attr("x", 80)
+				.attr("y", 240)
+				.transition(1000)
+				.style("opacity", 1)
+				.text(function() {
+					var luku = pudokkaat + jatkajat;
+					return "Vaaleissa 2012 valittiin " + luku + " vihreää valtuutettua";
+				});
+			setTimeout(function() {
+				vaihda(data, 1);
+			}, 3000);
+				
 	} else if (page == 1) {
 		svg.selectAll(".status0")
 			.transition()
-				.duration(1000)
+				.duration(2000)
 				.style("fill", "white")
 				.attr("cy", 500);
-		
 		svg.selectAll(".status2")
 			.transition()
-				.duration(1000)
+				.duration(2000)
 				.style("fill", "limegreen")
-				.attr("r", 5);
+				.attr("r", 6);
+		svg.append("text")
+			.style("opacity", 0)
+			.attr("class","narrator")
+			.style("fill", "darkgreen")
+			.attr("x", 30)
+			.attr("y", 270)
+			.transition(2500)
+			.style("opacity", 1)
+			.text(function() {
+				var lause = "Heistä " + pudokkaat + " luopui paikastaan tai putosi, mutta uusia valittiin " + uudet + ".";
+				return lause;
+			});
+		setTimeout(function() {
+				vaihda(data, 2);
+			}, 5000);
 	} else if (page == 2) {
+		
+		d3.selectAll(".narrator").remove();
+		
+		svg.append("text")
+			.text("Suomen")
+			.attr("class", "otsake")
+			.attr("x", 360)
+			.attr("y", 20)
+			.style("fill", "black");
+		svg.append("text")
+			.text(function() {
+				return jatkajat + uudet;
+			})
+			.attr("class", "numba")
+			.attr("x", 360)
+			.attr("y", 80)
+			.style("fill", "limegreen");
+		svg.append("text")
+			.text("vihreää")
+			.attr("class", "otsake")
+			.attr("x", 360)
+			.attr("y", 100)
+			.style("fill", "black");
+		svg.append("text")
+			.text("valtuutettua")
+			.attr("class", "otsake")
+			.attr("x", 360)
+			.attr("y", 120)
+			.style("fill", "black");
 		
 		svg.selectAll(".dot")
 			.data(data)
@@ -152,18 +237,17 @@ function vaihda(data, page) {
 					.text("Valitut:")
 					.attr("class", "nimiLista boldattu")
 					.attr("x", 360)
-					.attr("y", 20)
+					.attr("y", 150)
 					.style("fill", "black");
 				d.nimet.forEach(function(d, i) {
 					svg.append("text")
 						.text(d)
 						.attr("class", "nimiLista")
 						.attr("x", 360)
-						.attr("y", 40+20*i)
+						.attr("y", 166+16*i)
 						.style("fill", "black");
 				});
 
-				//TEKSTIT VALITUILLE
 			})
 			.on("mouseout", function(d) {
 				d3.select(this).transition().duration(400).attr("r", function(d) { return 2*Math.sqrt(d.kuntaPaikat/Math.PI); });
@@ -183,7 +267,6 @@ function vaihda(data, page) {
 d3.select(".nappi")
 	.on("click", function(){
 			if (page == 3) { page = -1; };
-			//console.log("nappi");
 			page = page+1;
 			vaihda(data, page);
 	});
@@ -196,6 +279,13 @@ d3.json("oikeakuntadata.json", function(error, json) {
 		var kuntaLon = d.lon;
 		var kuntaLat = d.lat;
 		d.children.forEach(function(d) {
+			if (d.status == 0) {
+				pudokkaat = pudokkaat + 1;
+			} else if (d.status == 1) {
+				jatkajat = jatkajat + 1;
+			} else {
+				uudet = uudet + 1;
+			};
 			d.kname = kuntaNimi;
 			d.totvotes = kuntaVotes;
 			d.lon = kuntaLon;
@@ -215,7 +305,6 @@ d3.json("oikeakuntadata.json", function(error, json) {
 			.attr("cy", 250)
 			.attr("r", 0)
 			.style("fill", "darkgreen");
-	//console.log(data);
 	
 	vaihda(data, 0);
 });

@@ -2,16 +2,11 @@
 "tulokset":
 [{
     "name": "Akaa",
-    "totvotes": 2000,
+    "totvotes": 7590,
     "lat": 61.168006,
     "lon": 23.868675,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Heli Piirainen", "status": 1, "pervotes": 135}
 		]},
   {
     "name": "Alajärvi",
@@ -436,16 +431,11 @@
   },
   {
     "name": "Hämeenkyrö",
-    "totvotes": 2000,
+    "totvotes": 4769,
     "lat": 61.633333,
     "lon": 23.2,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Kati Lahtinen", "status": 1, "pervotes": 46}
 		]
   },
   {
@@ -456,10 +446,7 @@
     "children": [
 			{"name": "Kirsi Ojansuu-Kaunisto", "status": 1, "pervotes": 270},
 			{"name": "Päivi Sieppi", "status": 1, "pervotes": 189},
-			{"name": "Martti Töttölä", "status": 1, "pervotes": 147},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Martti Töttölä", "status": 1, "pervotes": 147}
 		]
   },
   {
@@ -495,20 +482,6 @@
     "totvotes": 2000,
     "lat": 60.866661,
     "lon": 26.383327,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
-    "name": "Ikaalinen",
-    "totvotes": 2000,
-    "lat": 61.770149,
-    "lon": 23.063378,
     "children": [
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
@@ -699,20 +672,6 @@
 		]
   },
   {
-    "name": "Juupajoki",
-    "totvotes": 2000,
-    "lat": 61.796466,
-    "lon": 24.366272,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
     "name": "Juva",
     "totvotes": 2000,
     "lat": 61.896167,
@@ -826,16 +785,13 @@
   },
   {
     "name": "Kangasala",
-    "totvotes": 2000,
+    "totvotes": 13987,
     "lat": 61.464901,
     "lon": 24.065938,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Tony", "status": 1, "pervotes": 121},
+			{"name": "Stiina Lahikainen", "status": 1, "pervotes": 121},
+			{"name": "Nina-Carita Säpyskä", "status": 1, "pervotes": 111}
 		]
   },
   {
@@ -1093,20 +1049,6 @@
     "totvotes": 2000,
     "lat": 62.257982,
     "lon": 24.70836,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
-    "name": "Kihniö",
-    "totvotes": 2000,
-    "lat": 62.200564,
-    "lon": 23.180218,
     "children": [
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
@@ -1609,16 +1551,13 @@
   },
   {
     "name": "Lempäälä",
-    "totvotes": 2000,
+    "totvotes": 9376,
     "lat": 61.316667,
     "lon": 23.75,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Killi Jokila", "status": 1, "pervotes": 208},
+			{"name": "Mari Larikka", "status": 1, "pervotes": 116},
+			{"name": "Sanna Raatikainen", "status": 1, "pervotes": 93}
 		]
   },
   {
@@ -1981,16 +1920,12 @@
   },
   {
     "name": "Mänttä-Vilppula",
-    "totvotes": 2000,
+    "totvotes": 5423,
     "lat": 62.034147,
     "lon": 24.622411,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Harri Kohvakka", "status": 1, "pervotes": 83},
+			{"name": "Henna Hakala", "status": 1, "pervotes": 66}
 		]
   },
   {
@@ -2033,16 +1968,15 @@
   },
   {
     "name": "Nokia",
-    "totvotes": 2000,
+    "totvotes": 14829,
     "lat": 61.476632,
     "lon": 23.505351,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Leo Lähde", "status": 1, "pervotes": 178},
+			{"name": "Antti Tomminen", "status": 1, "pervotes": 162},
+			{"name": "Anitta Forssén", "status": 1, "pervotes": 118},
+			{"name": "Hannu Harju", "status": 1, "pervotes": 93},
+			{"name": "Miika Pulakka", "status": 1, "pervotes": 83}
 		]
   },
   {
@@ -2097,16 +2031,11 @@
   },
   {
     "name": "Orivesi",
-    "totvotes": 2000,
+    "totvotes": 4854,
     "lat": 61.67755,
     "lon": 24.358751,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Markku Arantila", "status": 1, "pervotes": 51}
 		]
   },
   {
@@ -2199,20 +2128,6 @@
     "totvotes": 2000,
     "lat": 61.55,
     "lon": 29.5,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
-    "name": "Parkano",
-    "totvotes": 2000,
-    "lat": 62.010201,
-    "lon": 23.024597,
     "children": [
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
@@ -2364,16 +2279,16 @@
   },
   {
     "name": "Pirkkala",
-    "totvotes": 2000,
+    "totvotes": 8751,
     "lat": 61.46545,
     "lon": 23.645625,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Riku Merikoski", "status": 1, "pervotes": 169},
+			{"name": "Aki Vainio", "status": 1, "pervotes": 132},
+			{"name": "Kari Talasmäki", "status": 1, "pervotes": 125},
+			{"name": "Arja Rinneaho", "status": 1, "pervotes": 107},
+			{"name": "Pirjo Jukarainen", "status": 1, "pervotes": 85},
+			{"name": "Teppo Hoikkala", "status": 1, "pervotes": 69}
 		]
   },
   {
@@ -2458,20 +2373,6 @@
 		]
   },
   {
-    "name": "Punkalaidun",
-    "totvotes": 2000,
-    "lat": 61.115776,
-    "lon": 23.099358,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
     "name": "Puolanka",
     "totvotes": 2000,
     "lat": 64.872978,
@@ -2546,20 +2447,6 @@
     "totvotes": 2000,
     "lat": 64.096296,
     "lon": 26.331649,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
-    "name": "Pälkäne",
-    "totvotes": 2000,
-    "lat": 61.337132,
-    "lon": 24.264942,
     "children": [
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
@@ -2755,20 +2642,6 @@
 		]
   },
   {
-    "name": "Ruovesi",
-    "totvotes": 2000,
-    "lat": 61.98563,
-    "lon": 24.070348,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
     "name": "Rusko",
     "totvotes": 2880,
     "lat": 60.542452,
@@ -2831,16 +2704,12 @@
   },
   {
     "name": "Sastamala",
-    "totvotes": 2000,
+    "totvotes": 12790,
     "lat": 61.339621,
     "lon": 22.913977,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Eveliina Asikainen", "status": 1, "pervotes": 131},
+			{"name": "Mika Sillanpää", "status": 1, "pervotes": 113}
 		]
   },
   {
@@ -3193,16 +3062,20 @@
   },
   {
     "name": "Tampere",
-    "totvotes": 2000,
+    "totvotes": 100991,
     "lat": 61.498021,
     "lon": 23.760312,
     "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+			{"name": "Satu Hassi", "status": 1, "pervotes": 1799},
+			{"name": "Oras Tynkkynen", "status": 1, "pervotes": 1125},
+			{"name": "Anna-Kaisa Heinämäki", "status": 1, "pervotes": 1066},
+			{"name": "Olli-Poika Parviainen", "status": 1, "pervotes": 643},
+			{"name": "Jaakko Mustakallio", "status": 1, "pervotes": 500},
+			{"name": "Maija Kajan", "status": 1, "pervotes": 425},
+			{"name": "Irene Roivainen", "status": 1, "pervotes": 371},
+			{"name": "Kirsikka Siik", "status": 1, "pervotes": 360},
+			{"name": "Hanna Hakko", "status": 1, "pervotes": 354},
+			{"name": "Juhana Suoniemi", "status": 1, "pervotes": 343}
 		]
   },
   {
@@ -3367,20 +3240,6 @@
 		]
   },
   {
-    "name": "Urjala",
-    "totvotes": 2000,
-    "lat": 61.089878,
-    "lon": 23.575575,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
     "name": "Utajärvi",
     "totvotes": 2000,
     "lat": 64.761878,
@@ -3463,20 +3322,6 @@
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
 		]},
   {
-    "name": "Valkeakoski",
-    "totvotes": 2000,
-    "lat": 61.263792,
-    "lon": 24.030128,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
     "name": "Valtimo",
     "totvotes": 2000,
     "lat": 63.679123,
@@ -3526,20 +3371,6 @@
     "totvotes": 2000,
     "lat": 62.930236,
     "lon": 26.408866,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
-		]
-  },
-  {
-    "name": "Vesilahti",
-    "totvotes": 2000,
-    "lat": 61.297019,
-    "lon": 23.638814,
     "children": [
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
 			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
@@ -3632,20 +3463,6 @@
 		]
   },
   {
-    "name": "Virrat",
-    "totvotes": 2000,
-    "lat": 62.240248,
-    "lon": 23.772559,
-    "children": [
-			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863}
-		]
-  },
-  {
     "name": "Vårdö",
     "totvotes": 2000,
     "lat": 60.242169,
@@ -3702,16 +3519,14 @@
   },
   {
     "name": "Ylöjärvi",
-    "totvotes": 2000,
+    "totvotes": 13639,
     "lat": 61.549961,
     "lon": 23.59695,
     "children": [
-			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
-			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863}
+			{"name": "Jussi Kytömäki", "status": 0, "pervotes": 195},
+			{"name": "Minna Sorsa", "status": 0, "pervotes": 181},
+			{"name": "Timo Toivonen", "status": 2, "pervotes": 141},
+			{"name": "Merja Lehtonen", "status": 2, "pervotes": 106}
 		]
   },
   {
