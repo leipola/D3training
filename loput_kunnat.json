@@ -399,6 +399,21 @@ HÄME:
 		]
   },
 
+  {
+    "name": "Sysmä",
+    "totvotes": 2000,
+    "lat": 61.50737,
+    "lon": 25.673892,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
 PIRKANMAA:
 
   {
@@ -566,3 +581,2212 @@ PIRKANMAA:
 		]
   },
 
+KYMI:
+
+  {
+    "name": "Iitti",
+    "totvotes": 2000,
+    "lat": 60.866661,
+    "lon": 26.383327,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Luumäki",
+    "totvotes": 2000,
+    "lat": 60.921078,
+    "lon": 27.562754,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Miehikkälä",
+    "totvotes": 2000,
+    "lat": 60.669153,
+    "lon": 27.696233,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Rautjärvi",
+    "totvotes": 2000,
+    "lat": 61.301247,
+    "lon": 29.089151,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Ruokolahti",
+    "totvotes": 2000,
+    "lat": 61.291242,
+    "lon": 28.829547,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Savitaipale",
+    "totvotes": 2000,
+    "lat": 61.19683,
+    "lon": 27.680643,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Taipalsaari",
+    "totvotes": 2000,
+    "lat": 61.161196,
+    "lon": 28.059972,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Virolahti",
+    "totvotes": 2000,
+    "lat": 60.589195,
+    "lon": 27.70375,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863}
+		]
+  },
+
+E-SAVO:
+
+  {
+    "name": "Enonkoski",
+    "totvotes": 2000,
+    "lat": 62.088074,
+    "lon": 28.920456,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Heinävesi",
+    "totvotes": 2000,
+    "lat": 62.426385,
+    "lon": 28.632886,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Hirvensalmi",
+    "totvotes": 2000,
+    "lat": 61.640192,
+    "lon": 26.779315,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Joroinen",
+    "totvotes": 2000,
+    "lat": 62.178208,
+    "lon": 27.828493,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Mäntyharju",
+    "totvotes": 2000,
+    "lat": 61.416233,
+    "lon": 26.878908,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Pertunmaa",
+    "totvotes": 2000,
+    "lat": 61.503393,
+    "lon": 26.47841,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Puumala",
+    "totvotes": 2000,
+    "lat": 61.523186,
+    "lon": 28.176906,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Rantasalmi",
+    "totvotes": 2000,
+    "lat": 62.063703,
+    "lon": 28.304508,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Sulkava",
+    "totvotes": 2000,
+    "lat": 61.786825,
+    "lon": 28.372855,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+P-SAVO:
+
+  {
+    "name": "Kaavi",
+    "totvotes": 2000,
+    "lat": 62.975758,
+    "lon": 28.480113,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Keitele",
+    "totvotes": 2000,
+    "lat": 63.178755,
+    "lon": 26.339305,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kiuruvesi",
+    "totvotes": 2000,
+    "lat": 63.652835,
+    "lon": 26.619693,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Pielavesi",
+    "totvotes": 2000,
+    "lat": 63.233333,
+    "lon": 26.750008,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Rautavaara",
+    "totvotes": 2000,
+    "lat": 63.494611,
+    "lon": 28.305073,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Sonkajärvi",
+    "totvotes": 2000,
+    "lat": 63.668948,
+    "lon": 27.523315,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Suonenjoki",
+    "totvotes": 2000,
+    "lat": 62.624193,
+    "lon": 27.124561,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Tervo",
+    "totvotes": 2000,
+    "lat": 62.953702,
+    "lon": 26.753683,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Tuusniemi",
+    "totvotes": 2000,
+    "lat": 62.812972,
+    "lon": 28.473989,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Varkaus",
+    "totvotes": 2000,
+    "lat": 62.317638,
+    "lon": 27.868123,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Vesanto",
+    "totvotes": 2000,
+    "lat": 62.930236,
+    "lon": 26.408866,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Vieremä",
+    "totvotes": 2000,
+    "lat": 63.75,
+    "lon": 27.016667,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863}
+		]
+  },
+
+P-KARJALA:
+
+  {
+    "name": "Ilomantsi",
+    "totvotes": 2000,
+    "lat": 62.679979,
+    "lon": 30.932562,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Juuka",
+    "totvotes": 2000,
+    "lat": 63.241333,
+    "lon": 29.253711,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kitee",
+    "totvotes": 2000,
+    "lat": 62.100195,
+    "lon": 30.135617,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Lieksa",
+    "totvotes": 2000,
+    "lat": 63.317821,
+    "lon": 30.019131,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Liperi",
+    "totvotes": 2000,
+    "lat": 62.53145,
+    "lon": 29.387202,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Nurmes",
+    "totvotes": 2000,
+    "lat": 63.542208,
+    "lon": 29.14101,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Polvijärvi",
+    "totvotes": 2000,
+    "lat": 62.854614,
+    "lon": 29.367434,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Tohmajärvi",
+    "totvotes": 2000,
+    "lat": 62.225945,
+    "lon": 30.333551,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Valtimo",
+    "totvotes": 2000,
+    "lat": 63.679123,
+    "lon": 28.814872,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+VAASA:
+
+  {
+    "name": "Alajärvi",
+    "totvotes": 2000,
+    "lat": 62.999864,
+    "lon": 23.816761,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]},
+
+{
+    "name": "Alavus",
+    "totvotes": 2000,
+    "lat": 62.586204,
+    "lon": 23.618529,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]},
+
+  {
+    "name": "Evijärvi",
+    "totvotes": 2000,
+    "lat": 63.367071,
+    "lon": 23.476863,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Halsua",
+    "totvotes": 2000,
+    "lat": 63.461443,
+    "lon": 24.172727,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Ilmajoki",
+    "totvotes": 2000,
+    "lat": 62.731342,
+    "lon": 22.579772,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Isojoki",
+    "totvotes": 2000,
+    "lat": 62.114342,
+    "lon": 21.958776,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Isokyrö",
+    "totvotes": 2000,
+    "lat": 63,
+    "lon": 22.316667,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+{
+    "name": "Kannus",
+    "totvotes": 2000,
+    "lat": 63.900724,
+    "lon": 23.916903,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Karijoki",
+    "totvotes": 2000,
+    "lat": 62.307535,
+    "lon": 21.70777,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kauhajoki",
+    "totvotes": 2000,
+    "lat": 62.431748,
+    "lon": 22.184199,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kauhava",
+    "totvotes": 2000,
+    "lat": 63.099494,
+    "lon": 23.06867,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kaustinen",
+    "totvotes": 2000,
+    "lat": 63.549049,
+    "lon": 23.696497,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Korsnäs",
+    "totvotes": 2000,
+    "lat": 62.786373,
+    "lon": 21.18784,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kristiinankaupunki",
+    "totvotes": 2000,
+    "lat": 62.171787,
+    "lon": 21.217575,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kruunupyy",
+    "totvotes": 2000,
+    "lat": 63.728826,
+    "lon": 23.021519,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kuortane",
+    "totvotes": 2000,
+    "lat": 62.806963,
+    "lon": 23.506923,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kurikka",
+    "totvotes": 2000,
+    "lat": 62.617073,
+    "lon": 22.399237,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Laihia",
+    "totvotes": 2000,
+    "lat": 62.976106,
+    "lon": 22.012216,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Lappajärvi",
+    "totvotes": 2000,
+    "lat": 63.219338,
+    "lon": 23.628386,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Lapua",
+    "totvotes": 2000,
+    "lat": 62.967902,
+    "lon": 22.997979,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Lestijärvi",
+    "totvotes": 2000,
+    "lat": 63.524509,
+    "lon": 24.668304,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Luoto",
+    "totvotes": 2000,
+    "lat": 63.761978,
+    "lon": 22.756452,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Maalahti",
+    "totvotes": 2000,
+    "lat": 62.933209,
+    "lon": 21.56677,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+{
+    "name": "Mustasaari",
+    "totvotes": 2000,
+    "lat": 63.124762,
+    "lon": 21.694135,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Närpiö",
+    "totvotes": 2000,
+    "lat": 62.477976,
+    "lon": 21.336676,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Pedersören kunta",
+    "totvotes": 2000,
+    "lat": 63.540758,
+    "lon": 23.045211,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Perho",
+    "totvotes": 2000,
+    "lat": 63.214438,
+    "lon": 24.419623,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Soini",
+    "totvotes": 2000,
+    "lat": 62.873809,
+    "lon": 24.207655,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Teuva",
+    "totvotes": 2000,
+    "lat": 62.484103,
+    "lon": 21.739319,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Toholampi",
+    "totvotes": 2000,
+    "lat": 63.772623,
+    "lon": 24.251545,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Uusikaarlepyy",
+    "totvotes": 2000,
+    "lat": 63.520243,
+    "lon": 22.528601,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Veteli",
+    "totvotes": 2000,
+    "lat": 63.47098,
+    "lon": 23.784355,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Vimpeli",
+    "totvotes": 2000,
+    "lat": 63.16148,
+    "lon": 23.817769,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Vöyri",
+    "totvotes": 2000,
+    "lat": 63.130496,
+    "lon": 22.250699,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Ähtäri",
+    "totvotes": 2000,
+    "lat": 62.549977,
+    "lon": 24.070227,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+K-SUOMI:
+
+  {
+    "name": "Hankasalmi",
+    "totvotes": 2000,
+    "lat": 62.39052,
+    "lon": 26.439747,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Joutsa",
+    "totvotes": 2000,
+    "lat": 61.825733,
+    "lon": 25.981963,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kannonkoski",
+    "totvotes": 2000,
+    "lat": 62.976882,
+    "lon": 25.263737,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Karstula",
+    "totvotes": 2000,
+    "lat": 62.877889,
+    "lon": 24.8008,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kinnula",
+    "totvotes": 2000,
+    "lat": 63.366783,
+    "lon": 24.970878,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kivijärvi",
+    "totvotes": 2000,
+    "lat": 63.122303,
+    "lon": 25.072547,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Konnevesi",
+    "totvotes": 2000,
+    "lat": 62.626659,
+    "lon": 26.291604,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kuhmoinen",
+    "totvotes": 2000,
+    "lat": 61.566667,
+    "lon": 25.183333,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kyyjärvi",
+    "totvotes": 2000,
+    "lat": 63.043588,
+    "lon": 24.564759,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Luhanka",
+    "totvotes": 2000,
+    "lat": 61.797009,
+    "lon": 25.704643,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Pihtipudas",
+    "totvotes": 2000,
+    "lat": 63.383333,
+    "lon": 25.566667,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Toivakka",
+    "totvotes": 2000,
+    "lat": 62.096217,
+    "lon": 26.080494,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Uurainen",
+    "totvotes": 2000,
+    "lat": 62.50077,
+    "lon": 25.437961,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Viitasaari",
+    "totvotes": 2000,
+    "lat": 63.08372,
+    "lon": 25.852835,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863}
+		]
+  },
+
+OULU:
+
+  {
+    "name": "Alavieska",
+    "totvotes": 2000,
+    "lat": 64.170107,
+    "lon": 24.299142,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Haapajärvi",
+    "totvotes": 2000,
+    "lat": 63.750878,
+    "lon": 25.312773,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Haapavesi",
+    "totvotes": 2000,
+    "lat": 64.137874,
+    "lon": 25.365818,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Hailuoto",
+    "totvotes": 2000,
+    "lat": 65.01378,
+    "lon": 24.729232,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]},
+
+  {
+    "name": "Hyrynsalmi",
+    "totvotes": 2000,
+    "lat": 64.674722,
+    "lon": 28.492254,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]},
+
+  {
+    "name": "Kärsämäki",
+    "totvotes": 2000,
+    "lat": 63.979723,
+    "lon": 25.758848,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Lumijoki",
+    "totvotes": 2000,
+    "lat": 64.838404,
+    "lon": 25.186843,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+ 
+   {
+    "name": "Merijärvi",
+    "totvotes": 2000,
+    "lat": 64.29261,
+    "lon": 24.437257,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Muhos",
+    "totvotes": 2000,
+    "lat": 64.806309,
+    "lon": 25.995364,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Nivala",
+    "totvotes": 2000,
+    "lat": 63.928953,
+    "lon": 24.961259,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Oulainen",
+    "totvotes": 2000,
+    "lat": 64.266773,
+    "lon": 24.800033,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Paltamo",
+    "totvotes": 2000,
+    "lat": 64.406867,
+    "lon": 27.833551,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Pudasjärvi",
+    "totvotes": 949,
+    "lat": 65.360401,
+    "lon": 26.99849,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Puolanka",
+    "totvotes": 2000,
+    "lat": 64.872978,
+    "lon": 27.655254,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Pyhäjoki",
+    "totvotes": 2000,
+    "lat": 64.466319,
+    "lon": 24.255053,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+  {
+    "name": "Pyhäjärvi",
+    "totvotes": 2000,
+    "lat": 63.680974,
+    "lon": 25.97335,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Pyhäntä",
+    "totvotes": 2000,
+    "lat": 64.096296,
+    "lon": 26.331649,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Raahe",
+    "totvotes": 2000,
+    "lat": 64.679687,
+    "lon": 24.470918,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Reisjärvi",
+    "totvotes": 2000,
+    "lat": 63.603229,
+    "lon": 24.935068,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Ristijärvi",
+    "totvotes": 2000,
+    "lat": 64.500904,
+    "lon": 28.213157,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Sievi",
+    "totvotes": 2000,
+    "lat": 63.908263,
+    "lon": 24.515987,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Siikajoki",
+    "totvotes": 2000,
+    "lat": 64.812533,
+    "lon": 24.761718,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Siikalatva",
+    "totvotes": 2000,
+    "lat": 64.271448,
+    "lon": 25.867133,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Sotkamo",
+    "totvotes": 2000,
+    "lat": 64.131826,
+    "lon": 28.387832,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Suomussalmi",
+    "totvotes": 2000,
+    "lat": 64.884699,
+    "lon": 28.911252,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]},
+
+  {
+    "name": "Taivalkoski",
+    "totvotes": 2000,
+    "lat": 65.575294,
+    "lon": 28.242587,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Tyrnävä",
+    "totvotes": 2000,
+    "lat": 64.762137,
+    "lon": 25.649887,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Utajärvi",
+    "totvotes": 2000,
+    "lat": 64.761878,
+    "lon": 26.41696,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Vaala",
+    "totvotes": 2000,
+    "lat": 64.556527,
+    "lon": 26.846652,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+LAPPI:
+
+  {
+    "name": "Kemijärvi",
+    "totvotes": 2000,
+    "lat": 66.715927,
+    "lon": 27.432304,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Keminmaa",
+    "totvotes": 2000,
+    "lat": 65.803014,
+    "lon": 24.520878,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kittilä",
+    "totvotes": 2000,
+    "lat": 67.652118,
+    "lon": 24.917107,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kolari",
+    "totvotes": 2000,
+    "lat": 67.330335,
+    "lon": 23.781474,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Muonio",
+    "totvotes": 2000,
+    "lat": 67.95934,
+    "lon": 23.677404,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Pello",
+    "totvotes": 2000,
+    "lat": 66.774733,
+    "lon": 23.967682,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Posio",
+    "totvotes": 2000,
+    "lat": 66.109259,
+    "lon": 28.165078,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Ranua",
+    "totvotes": 2000,
+    "lat": 65.927682,
+    "lon": 26.513104,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Salla",
+    "totvotes": 2000,
+    "lat": 66.833268,
+    "lon": 28.666863,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]},
+
+  {    "name": "Savukoski",
+    "totvotes": 2000,
+    "lat": 67.292295,
+    "lon": 28.160974,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]},
+
+  {
+    "name": "Simo",
+    "totvotes": 2000,
+    "lat": 65.662285,
+    "lon": 25.063816,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Tervola",
+    "totvotes": 2000,
+    "lat": 66.082291,
+    "lon": 24.805884,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Tornio",
+    "totvotes": 2000,
+    "lat": 65.845759,
+    "lon": 24.1464,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]},
+
+  {
+    "name": "Utsjoki",
+    "totvotes": 2000,
+    "lat": 69.907824,
+    "lon": 27.02505,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863}
+		]},
+
+  {
+    "name": "Ylitornio",
+    "totvotes": 2000,
+    "lat": 66.316426,
+    "lon": 23.6713,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 0, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 2, "pervotes": 1863}
+		]},
+
+AHVENANMAA:
+
+  {
+    "name": "Brändö",
+    "totvotes": 2000,
+    "lat": 60.406741,
+    "lon": 21.030546,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Eckerö",
+    "totvotes": 2000,
+    "lat": 60.214674,
+    "lon": 19.619455,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Finström",
+    "totvotes": 2000,
+    "lat": 60.280335,
+    "lon": 19.88554,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Föglö",
+    "totvotes": 2000,
+    "lat": 59.81886,
+    "lon": 20.396971,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]},
+
+  {
+    "name": "Geta",
+    "totvotes": 2000,
+    "lat": 60.573978,
+    "lon": 19.699128,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Hammarland",
+    "totvotes": 2000,
+    "lat": 60.219676,
+    "lon": 19.737848,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Jomala",
+    "totvotes": 2000,
+    "lat": 59.988382,
+    "lon": 19.666835,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kumlinge",
+    "totvotes": 2000,
+    "lat": 60.25995,
+    "lon": 20.778625,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Kökar",
+    "totvotes": 2000,
+    "lat": 59.785145,
+    "lon": 20.965519,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Lemland",
+    "totvotes": 2000,
+    "lat": 60.055716,
+    "lon": 20.12207,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Lumparland",
+    "totvotes": 2000,
+    "lat": 60.116869,
+    "lon": 20.271068,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Maarianhamina",
+    "totvotes": 2000,
+    "lat": 60.102423,
+    "lon": 19.94126,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Saltvik",
+    "totvotes": 2000,
+    "lat": 60.482672,
+    "lon": 20.128692,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Sottunga",
+    "totvotes": 2000,
+    "lat": 60.130833,
+    "lon": 20.666399,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Sund",
+    "totvotes": 2000,
+    "lat": 60.244528,
+    "lon": 20.160052,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },
+
+  {
+    "name": "Vårdö",
+    "totvotes": 2000,
+    "lat": 60.242169,
+    "lon": 20.374426,
+    "children": [
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863},
+			{"name": "Otso Kivekäs", "status": 1, "pervotes": 1863}
+		]
+  },

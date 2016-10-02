@@ -49,11 +49,11 @@ var svg = d3.select("body").append("svg")
 	.attr("preserveAspectRatio", "xMidYMid meet");*/
 
 var x = d3.scaleLinear()
-	.domain([18, 40])
+	.domain([20, 37])
 	.range([0, 500]);
 
 var y = d3.scaleLinear()
-	.domain([59, 71])
+	.domain([59, 70])
 	.range([500, 0]);
 	
 var data = [];
@@ -75,7 +75,7 @@ function aloitus(data) {
 			})
 			.attr("transform", function() {
 				var angle = (Math.random() * Math.PI * 2);
-				var radius = (Math.random() * 240);
+				var radius = (15 + Math.random() * 225);
 				var deltax = 100;
 				var deltay =  -100;
 				if (angle < Math.PI/2) {
@@ -152,7 +152,7 @@ function kartta(data) {
 		.style("opacity", 0)
 		.text("Suomen")
 		.attr("class", "otsake")
-		.attr("x", 360)
+		.attr("x", 340)
 		.attr("y", 20)
 		.style("fill", "black")
 		.transition()
@@ -164,8 +164,8 @@ function kartta(data) {
 			return jatkajat + uudet;
 		})
 		.attr("class", "numba")
-		.attr("x", 360)
-		.attr("y", 80)
+		.attr("x", 338)
+		.attr("y", 77)
 		.style("fill", "limegreen")
 		.transition()
 			.duration(1400)
@@ -174,7 +174,7 @@ function kartta(data) {
 		.style("opacity", 0)
 		.text("vihreää")
 		.attr("class", "otsake")
-		.attr("x", 360)
+		.attr("x", 340)
 		.attr("y", 100)
 		.style("fill", "black")
 		.transition()
@@ -184,7 +184,7 @@ function kartta(data) {
 		.style("opacity", 0)
 		.text("valtuutettua")
 		.attr("class", "otsake")
-		.attr("x", 360)
+		.attr("x", 340)
 		.attr("y", 120)
 		.style("fill", "black")
 		.transition()
@@ -227,7 +227,7 @@ function kartta(data) {
 			.attr("class", "city")
 			.attr("cx", function(d) { return x(d.lon); })
 			.attr("cy", function(d) { return y(d.lat); })
-			.attr("r", function(d) { return 2*Math.sqrt(d.kuntaPaikat/Math.PI); })
+			.attr("r", function(d) { return 3*Math.sqrt(d.kuntaPaikat/Math.PI); })
 			.style("fill", "limegreen")
 		.on("mouseover", function(d) {
 			d3.select(this)
@@ -243,14 +243,14 @@ function kartta(data) {
 			svg.append("text")
 				.text("Valitut:")
 				.attr("class", "nimiLista boldattu")
-				.attr("x", 360)
+				.attr("x", 340)
 				.attr("y", 150)
 				.style("fill", "black");
 			d.nimet.forEach(function(d, i) {
 				svg.append("text")
 					.text(d)
 					.attr("class", "nimiLista")
-					.attr("x", 360)
+					.attr("x", 340)
 					.attr("y", 166+16*i)
 					.style("fill", "black");
 			});
