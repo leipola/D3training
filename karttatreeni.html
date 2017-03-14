@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="d3.v4.min.js"></script>
+<script src="Kuntarajat2017.geojson"></script>
+<script src="ehdokasdata.js"></script>
+<title>Karttatreeni</title>
+<style>
+
+</style>
+</head>
+<body>
+<script>
+
+var width = 960,
+    height = 960;
+
+var svg = d3.select( "body" )
+  .append( "svg" )
+  .attr( "width", width )
+  .attr( "height", height );
+
+var g = svg.append( "g" );
+
+var albersProjection = d3.geoConicEqualArea()
+    .center([0, 65])
+    .rotate([-27.6, 0])
+    .parallels([60, 70])
+    .scale(5000)
+    .translate([width / 2, height / 2]);
+
+var geoPath = d3.geoPath()
+    .projection( albersProjection );
+
+g.selectAll( "path" )
+  .data( kunnat_json.features )
+  .enter()
+  .append( "path" )
+  .attr( "fill", function(d) {
+		if (ehdokkaat["uudet"].indexOf(d["properties"]["Name"]) > -1) {
+			return "#01FF70";
+		} else if (ehdokkaat["pysyy"].indexOf(d["properties"]["Name"]) > -1) {
+			return "#2ECC40";
+		} else if (ehdokkaat["putoaa"].indexOf(d["properties"]["Name"]) > -1) {
+			return "#AAAAAA";
+		} else {
+			return "#DDDDDD";
+		};
+  })
+  .attr( "d", geoPath );
+
+  </script>
+</body>
+</html>
